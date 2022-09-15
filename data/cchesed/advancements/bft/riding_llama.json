@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:started_riding",
+      "conditions": {
+        "player": {
+          "vehicle": {
+            "type": "minecraft:llama",
+            "nbt": "{Tags:[\"cc.ft.llama\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "cchesed:bft/force_dismount"
+  }
+}
