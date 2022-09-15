@@ -8,6 +8,6 @@
     }
   },
   "rewards": {
-    "function": "cchesed:bft/place/place_table"
+    "function": "cchesed:bft/block/place_table"
   }
 }
