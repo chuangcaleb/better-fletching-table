@@ -1,0 +1,14 @@
+{
+  "parent": "global:cchesed",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:fletching_table"
+      }
+    }
+  },
+  "rewards": {
+    "function": "cchesed:bft/place_table"
+  }
+}

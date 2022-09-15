@@ -1,0 +1,22 @@
+{
+  "display": {
+    "title": "Better Fletching Table v1.0",
+    "description": [
+      {
+        "text": "\nAdds a GUI to Fletching Tables!\n\n§7§nhttps://www.planetminecraft.com/member/calebchan/\n"
+      }
+    ],
+    "icon": {
+      "item": "minecraft:fletching_table",
+      "nbt": "{display:{Name:'{\"text\":\"Better Fletching Table\",\"italic\":false}'}}"
+    },
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "global:cchesed",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}
