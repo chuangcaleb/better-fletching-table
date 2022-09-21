@@ -17,7 +17,7 @@ def offset_index(val):
         return val + 4
 
 
-output_strt = 'execute if data entity @s ${has} ${hasnt} run function cchesed:bft/craft/${func}'
+output_strt = 'execute if data entity @s ${has} ${hasnt} run function cchesed:bft/recipe/'
 
 output_t = Template(output_strt)
 
@@ -30,10 +30,10 @@ slots = [
     "string",
     "",
     "stick",
-    "",
+    "string",
 ]
 
-func = "arrow"
+# func = "arrow"
 
 
 has_str = "{Items:[" + \
