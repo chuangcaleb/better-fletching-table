@@ -1,4 +1,4 @@
-function cchesed:bft/craft/calc_min
+# function cchesed:bft/craft/calc_min
 
 scoreboard players operation .to_subtract cc.ft.count = .minimum cc.ft.count
 scoreboard players operation .to_subtract cc.ft.count *= .1 cc.ft.count
