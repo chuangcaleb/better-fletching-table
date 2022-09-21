@@ -22,15 +22,15 @@ output_strt = 'execute if data entity @s ${has} ${hasnt} run function cchesed:bf
 output_t = Template(output_strt)
 
 slots = [
-    "",
+    "stick",
+    "iron_ingot",
     "stick",
     "string",
-    "stick",
-    "",
+    "tripwire_hook",
     "string",
     "",
     "stick",
-    "string",
+    "",
 ]
 
 # func = "arrow"
@@ -47,7 +47,7 @@ hasnt_str = " ".join(
      if v == ""])
 
 
-out = output_t.substitute(has=has_str, hasnt=hasnt_str, func=func)
+out = output_t.substitute(has=has_str, hasnt=hasnt_str)
 
 print(out)
 

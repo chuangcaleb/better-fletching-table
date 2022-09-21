@@ -3,7 +3,7 @@
 # ------------------------ Intiialize fletching table ------------------------ #
 
 # If crafted was taken, spit it out
-execute if score @s cc.ft.craft_result matches 1.. unless data entity @s Items[{Slot:11b}] run function cchesed:bft/craft/_craft
+execute if score @s cc.ft.output_id matches 1.. unless data entity @s Items[{Slot:11b}] run function cchesed:bft/craft/_craft
 
 # spit out replaced gui items
 execute unless data entity @s Items[{Slot:5b,tag:{cchesed:{bft:{gui_ghost:1b}}}}] if data entity @s Items[{Slot:5b}] run function cchesed:bft/gui/replace_5
@@ -24,11 +24,11 @@ item replace entity @s horse.14 with light_gray_stained_glass_pane{display:{Name
 item replace entity @s horse.9 with air
 
 # Reset craft result id
-scoreboard players set @s cc.ft.craft_result 0
+scoreboard players set @s cc.ft.output_id -1
 
 # ------------------------------- check recipes ------------------------------ #
 
-function cchesed:bft/recipe/_all
+function cchesed:bft/recipe/_all_recipes
 
 # ------------------------------ block handling ------------------------------ #
 
