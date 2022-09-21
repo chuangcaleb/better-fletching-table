@@ -4,7 +4,7 @@
     "type": "minecraft:score",
     "target": {
       "type": "minecraft:fixed",
-      "name": ".minimum"
+      "name": ".to_subtract"
     },
     "score": "cc.ft.count",
     "scale": 1
