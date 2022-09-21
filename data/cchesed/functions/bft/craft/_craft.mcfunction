@@ -21,8 +21,7 @@ data remove entity @e[limit=1,tag=cc.ft.drop_item,sort=nearest] Item.tag.cchesed
 
 # Subtract material cost
 execute if score @s cc.ft.output_id matches 0..1 run function cchesed:bft/craft/subtract_1
-
-
+execute if score @s cc.ft.output_id matches 2.. run function cchesed:bft/craft/subtract_min
 
 # Player UI feedback
 playsound minecraft:block.wood.step player @a[distance=..8] ~ ~ ~ 1 1.7

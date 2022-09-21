@@ -3,7 +3,7 @@
 # ------------------------ Intiialize fletching table ------------------------ #
 
 # If crafted was taken, spit it out
-execute if score @s cc.ft.output_id matches 1.. unless data entity @s Items[{Slot:11b}] run function cchesed:bft/craft/_craft
+execute if score @s cc.ft.output_id matches 0.. unless data entity @s Items[{Slot:11b}] run function cchesed:bft/craft/_craft
 
 # spit out replaced gui items
 execute unless data entity @s Items[{Slot:5b,tag:{cchesed:{bft:{gui_ghost:1b}}}}] if data entity @s Items[{Slot:5b}] run function cchesed:bft/gui/replace_5
