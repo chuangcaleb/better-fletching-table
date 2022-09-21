@@ -19,9 +19,18 @@ data modify entity @e[limit=1,tag=cc.ft.drop_item,sort=nearest] Item set from en
 data remove entity @e[limit=1,tag=cc.ft.drop_item,sort=nearest] Item.tag.cchesed.bft.gui_ghost
 
 
-# Subtract material cost
+# -------------------------- Subtract material cost -------------------------- #
+# Check for shift-click
+data modify storage cchesed:bft ShiftClicked set value 0
+execute store result storage cchesed:bft ShiftClicked int 1 run data get entity @p Inventory[{tag:{cchesed:{bft:{gui_ghost:1b}}}}]
+
+# If it's a non-stackable, simply subtract one count
 execute if score @s cc.ft.output_id matches 0..1 run function cchesed:bft/craft/subtract_1
-execute if score @s cc.ft.output_id matches 2.. run function cchesed:bft/craft/subtract_min
+# If it's stackable, subtract one, but craft as many as possible if shift-clicked
+execute if score @s cc.ft.output_id matches 2.. run function cchesed:bft/craft/craft_stackable
+
+
+
 
 # Player UI feedback
 playsound minecraft:block.wood.step player @a[distance=..8] ~ ~ ~ 1 1.7
