@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:light_gray_stained_glass_pane",
+    "minecraft:oak_sign",
+    "minecraft:knowledge_book",
+    "minecraft:fletching_table",
+    "minecraft:bow",
+    "minecraft:stick",
+    "minecraft:string",
+    "minecraft:crossbow",
+    "minecraft:iron_ingot",
+    "minecraft:tripwire_hook",
+    "minecraft:gravel",
+    "minecraft:flint",
+    "minecraft:feather",
+    "minecraft:arrow",
+    "minecraft:glowstone_dust",
+    "minecraft:spectral_arrow",
+    "minecraft:splash_potion",
+    "minecraft:tipped_arrow",
+    "minecraft:firework_rocket",
+    "minecraft:tnt",
+    "minecraft:prismarine_shard",
+    "minecraft:phantom_membrane"
+  ]
+}
