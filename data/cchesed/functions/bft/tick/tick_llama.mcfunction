@@ -13,7 +13,7 @@ execute unless data entity @s Items[{Slot:11b,tag:{cchesed:{bft:{gui_ghost:1b}}}
 execute unless data entity @s Items[{Slot:15b,tag:{cchesed:{bft:{gui_ghost:1b}}}}] if data entity @s Items[{Slot:15b}] run function cchesed:bft/gui/replace_15
 execute unless data entity @s Items[{Slot:16b,tag:{cchesed:{bft:{gui_ghost:1b}}}}] if data entity @s Items[{Slot:16b}] run function cchesed:bft/gui/replace_16
 
-# refill slot wit the glass pane
+# refill slot with the glass pane
 item replace entity @s horse.3 with light_gray_stained_glass_pane{display:{Name:'{"text":""}'},cchesed:{bft:{gui_ghost:1b}}}
 item replace entity @s horse.4 with light_gray_stained_glass_pane{display:{Name:'{"text":""}'},cchesed:{bft:{gui_ghost:1b}}}
 item replace entity @s horse.8 with light_gray_stained_glass_pane{display:{Name:'{"text":"→"}'},cchesed:{bft:{gui_ghost:1b}}}
