@@ -1,4 +1,4 @@
-advancement revoke @s only cchesed:bft/place_table
+advancement revoke @s only cchesed:bft/utility/place_table
 
 # Run raycast
 scoreboard players set @s cc.ft.raycast_counter 0
