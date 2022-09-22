@@ -20,7 +20,8 @@ function cchesed:bft/craft/produce_output
 # data remove entity @e[limit=1,tag=cc.ft.drop_item,sort=nearest] Item.tag.cchesed
 
 # Calculate multiplier
-execute if score @s cc.ft.output_id matches 10.. run function cchesed:bft/craft/multiply_4
+# execute if score @s cc.ft.output_id matches 10..19 run function cchesed:bft/craft/multiply_4
+# execute if score @s cc.ft.output_id matches 10..19 run function cchesed:bft/craft/multiply_4
 
 
 # -------------------------- Subtract material cost -------------------------- #
@@ -36,8 +37,7 @@ execute if score @s cc.ft.output_id matches 10.. run function cchesed:bft/craft/
 
  # ---------------------- Modify count according to stack --------------------- 
 
-data modify entity @e[limit=1,tag=cc.ft.drop_item,sort=nearest] Item.Count set from storage cchesed:bft OutputCount
-# execute if data storage cchesed:bft {ShiftClicked:4} run data modify entity @e[limit=1,tag=cc.ft.drop_item,sort=nearest] Item.Count set from storage cchesed:bft OutputCount
+execute if data storage cchesed:bft {ShiftClicked:4} run data modify entity @e[limit=1,tag=cc.ft.drop_item,sort=nearest] Item.Count set from storage cchesed:bft StackOutputCount
 
 tag @e[limit=1,tag=cc.ft.drop_item] remove cc.ft.drop_item
 
