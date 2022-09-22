@@ -1,6 +1,6 @@
 # ----------------------------------- Tick ----------------------------------- #
 
-execute as @e[tag=cc.ft.llama] at @s run function cchesed:bft/tick/tick_llama
+execute as @e[tag=cc.ft.llama] at @s if entity @p[distance=..6] run function cchesed:bft/tick/tick_llama
 
 # remove all gui_ghost items
 clear @a #cchesed:bft/ghost{cchesed:{bft:{gui_ghost:1b}}}
