@@ -42,7 +42,7 @@ has_str = "{Items:[" + \
               if v != ""]) + "]}"
 
 hasnt_str = " ".join(
-    [f'unless data entity @s Items:[{{Slot:{offset_index(i)}b}}]'
+    [f'unless data entity @s {{Items:[{{Slot:{offset_index(i)}b}}]}}'
      for i, v in enumerate(slots)
      if v == ""])
 
