@@ -5,26 +5,17 @@
  # Spawn in item
 summon minecraft:item ~ ~1 ~ {Item:{id:"minecraft:stone_button",Count:1b},Tags:["cc.ft.drop_item"], Motion:[0.0,0.25,0.0]}
 
-# Copy item data from output slot #########################
 
 # produce item in output slot again
 function cchesed:bft/craft/produce_output
 
-# copy it
-# data modify entity @e[limit=1,tag=cc.ft.drop_item,sort=nearest] Item set from entity @s Items[{Slot:11b}]
-
-# Remove utility tags
-# data remove entity @e[limit=1,tag=cc.ft.drop_item,sort=nearest] Item.tag.cchesed
-
 # --------------------------- Calculate multiplier --------------------------- #
+
 function cchesed:bft/craft/calc_min
 
 execute if score @s cc.ft.output_id matches 0..1 run data modify storage cchesed:bft StackOutputCount set value 1
 execute if score @s cc.ft.output_id matches 10..29 store result storage cchesed:bft StackOutputCount int 4 run scoreboard players get @s cc.ft.minimum
 execute if score @s cc.ft.output_id matches 30..39 store result storage cchesed:bft StackOutputCount int 1 run scoreboard players get @s cc.ft.minimum
-# execute if score @s cc.ft.output_id matches 0..1 run function cchesed:bft/craft/multiply_nonstack
-# execute if score @s cc.ft.output_id matches 10 run function cchesed:bft/craft/multiply_4
-# execute if score @s cc.ft.output_id matches 30 run function cchesed:bft/craft/multiply_1
 
 # -------------------------- Subtract material cost -------------------------- #
 
