@@ -10,7 +10,7 @@ summon minecraft:item ~ ~1 ~ {Item:{id:"minecraft:stone_button",Count:1b},Tags:[
 
 # produce item in output slot again
 # TODO: REFACTOR THIS
-# function cchesed:bft/recipe/_all_recipes
+# function cchesed:bft/recipe/_check_all_recipes
 function cchesed:bft/craft/produce_output
 
 # copy it

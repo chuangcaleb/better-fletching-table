@@ -28,7 +28,7 @@ scoreboard players set @s cc.ft.output_id -1
 
 # ------------------------------- check recipes ------------------------------ #
 
-function cchesed:bft/recipe/_all_recipes
+function cchesed:bft/recipe/_check_all_recipes
 
 # ------------------------------ block handling ------------------------------ #
 
