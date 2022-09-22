@@ -2,4 +2,4 @@ item replace entity @s horse.9 with minecraft:crossbow{cchesed:{bft:{gui_ghost:1
 
 scoreboard players set @s cc.ft.output_id 1
 
-function cchesed:bft/craft/multiply_nonstack
+# function cchesed:bft/craft/multiply_nonstack

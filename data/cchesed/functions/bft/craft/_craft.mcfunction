@@ -1,6 +1,5 @@
 # * Create output item
 
-
 # ------------------------------- create output ------------------------------ #
 
  # Spawn in item
@@ -9,8 +8,6 @@ summon minecraft:item ~ ~1 ~ {Item:{id:"minecraft:stone_button",Count:1b},Tags:[
 # Copy item data from output slot #########################
 
 # produce item in output slot again
-# TODO: REFACTOR THIS
-# function cchesed:bft/recipe/_check_all_recipes
 function cchesed:bft/craft/produce_output
 
 # copy it
@@ -19,10 +16,15 @@ function cchesed:bft/craft/produce_output
 # Remove utility tags
 # data remove entity @e[limit=1,tag=cc.ft.drop_item,sort=nearest] Item.tag.cchesed
 
-# Calculate multiplier
-# execute if score @s cc.ft.output_id matches 10..19 run function cchesed:bft/craft/multiply_4
-# execute if score @s cc.ft.output_id matches 10..19 run function cchesed:bft/craft/multiply_4
+# --------------------------- Calculate multiplier --------------------------- #
+function cchesed:bft/craft/calc_min
 
+execute if score @s cc.ft.output_id matches 0..1 run data modify storage cchesed:bft StackOutputCount set value 1
+execute if score @s cc.ft.output_id matches 10 store result storage cchesed:bft StackOutputCount int 4 run scoreboard players get @s cc.ft.minimum
+execute if score @s cc.ft.output_id matches 30 store result storage cchesed:bft StackOutputCount int 1 run scoreboard players get @s cc.ft.minimum
+# execute if score @s cc.ft.output_id matches 0..1 run function cchesed:bft/craft/multiply_nonstack
+# execute if score @s cc.ft.output_id matches 10 run function cchesed:bft/craft/multiply_4
+# execute if score @s cc.ft.output_id matches 30 run function cchesed:bft/craft/multiply_1
 
 # -------------------------- Subtract material cost -------------------------- #
 

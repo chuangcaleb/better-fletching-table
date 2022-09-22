@@ -3,10 +3,10 @@
   "count": {
     "type": "minecraft:score",
     "target": {
-      "type": "minecraft:fixed",
-      "name": ".to_subtract"
+      "type": "minecraft:context",
+      "target": "this"
     },
-    "score": "cc.ft.count",
+    "score": "cc.ft.to_subtract",
     "scale": 1
   },
   "add": true

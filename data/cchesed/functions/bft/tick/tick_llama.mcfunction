@@ -23,11 +23,10 @@ item replace entity @s horse.14 with light_gray_stained_glass_pane{display:{Name
 # remove old output, if any
 item replace entity @s horse.9 with air
 
-# Reset craft result id
-scoreboard players set @s cc.ft.output_id -1
-
 # ------------------------------- check recipes ------------------------------ #
 
+# Reset craft result id
+scoreboard players set @s cc.ft.output_id -1
 function cchesed:bft/recipe/_check_all_recipes
 
 # ------------------------------ block handling ------------------------------ #

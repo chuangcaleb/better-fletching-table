@@ -18,4 +18,4 @@ execute if data entity @s {Items:[{Slot:4b,id:"minecraft:flint"},{Slot:9b,id:"mi
 
 
 # spectral arrow
-execute if data entity @s Items[{id:"minecraft:arrow"}] if data entity @s Items[{id:"minecraft:glowstone_dust"}] if score .empty_slots cc.ft.count matches 7 run function cchesed:bft/recipe/spectral_arrow
+execute if data entity @s Items[{id:"minecraft:arrow"}] if data entity @s Items[{id:"minecraft:glowstone_dust"}] if score @s cc.ft.empty_slots matches 7 run function cchesed:bft/recipe/spectral_arrow
