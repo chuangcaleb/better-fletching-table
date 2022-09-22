@@ -20,8 +20,8 @@ function cchesed:bft/craft/produce_output
 function cchesed:bft/craft/calc_min
 
 execute if score @s cc.ft.output_id matches 0..1 run data modify storage cchesed:bft StackOutputCount set value 1
-execute if score @s cc.ft.output_id matches 10 store result storage cchesed:bft StackOutputCount int 4 run scoreboard players get @s cc.ft.minimum
-execute if score @s cc.ft.output_id matches 30 store result storage cchesed:bft StackOutputCount int 1 run scoreboard players get @s cc.ft.minimum
+execute if score @s cc.ft.output_id matches 10..29 store result storage cchesed:bft StackOutputCount int 4 run scoreboard players get @s cc.ft.minimum
+execute if score @s cc.ft.output_id matches 30..39 store result storage cchesed:bft StackOutputCount int 1 run scoreboard players get @s cc.ft.minimum
 # execute if score @s cc.ft.output_id matches 0..1 run function cchesed:bft/craft/multiply_nonstack
 # execute if score @s cc.ft.output_id matches 10 run function cchesed:bft/craft/multiply_4
 # execute if score @s cc.ft.output_id matches 30 run function cchesed:bft/craft/multiply_1
