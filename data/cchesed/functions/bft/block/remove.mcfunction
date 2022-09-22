@@ -1,4 +1,4 @@
-execute as @e[tag=cc.ft.table] at @s unless block ~ ~ ~ minecraft:fletching_table run tp @s ~ ~-500 ~
+execute as @e[tag=cc.ft.table,distance=..1.5] unless block ~ ~ ~ minecraft:fletching_table run tp @s ~ ~-500 ~
 # kill @e[type=minecraft:item,nbt={Item:[{id:"minecraft:chest"}]}]
 # kill @s
 
