@@ -22,3 +22,6 @@ execute if data entity @s Items[{id:"minecraft:arrow"}] if data entity @s Items[
 
 # rocket
 execute if data entity @s Items[{id:"minecraft:firework_rocket",tag:{Fireworks:{Explosions:[{Type:1b}]}}}] if data entity @s Items[{id:"minecraft:tnt"}] if score @s cc.ft.empty_slots matches 7 run function cchesed:bft/recipe/rocket
+
+# Target
+execute if data entity @s {Items:[{Slot:3b,id:"minecraft:redstone"},{Slot:7b,id:"minecraft:redstone"},{Slot:8b,id:"minecraft:hay_block"},{Slot:9b,id:"minecraft:redstone"},{Slot:13b,id:"minecraft:redstone"}]} unless data entity @s {Items:[{Slot:2b}]} unless data entity @s {Items:[{Slot:4b}]} unless data entity @s {Items:[{Slot:12b}]} unless data entity @s {Items:[{Slot:14b}]} run function cchesed:bft/recipe/target

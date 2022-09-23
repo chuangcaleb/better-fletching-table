@@ -22,14 +22,14 @@ output_strt = 'execute if data entity @s ${has} ${hasnt} run function cchesed:bf
 output_t = Template(output_strt)
 
 slots = [
-    "flint",
     "",
+    "redstone_dust",
     "",
-    "stick",
+    "redstone_dust",
+    "hay_block",
+    "redstone_dust",
     "",
-    "",
-    "feather",
-    "",
+    "redstone_dust",
     "",
 ]
 

@@ -22,6 +22,7 @@
     "minecraft:firework_rocket",
     "minecraft:tnt",
     "minecraft:prismarine_shard",
-    "minecraft:phantom_membrane"
+    "minecraft:phantom_membrane",
+    "target"
   ]
 }
