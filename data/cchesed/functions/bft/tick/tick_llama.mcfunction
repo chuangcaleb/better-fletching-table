@@ -9,7 +9,7 @@ execute if score @s cc.ft.output_id matches 0.. unless data entity @s Items[{Slo
 
 execute if data entity @s DecorItem run function cchesed:bft/gui/replace_decor
 
-execute unless data entity @s Items[{Slot:11b,tag:{cchesed:{bft:{gui_ghost:1b}}}}] run function cchesed:bft/gui/has_item_11
+execute if data entity @s Items[{Slot:11b}] run function cchesed:bft/gui/has_item_11
 
 # refill slot with the glass pane
 
@@ -19,9 +19,6 @@ execute unless data entity @s Items[{Slot:10b,tag:{cchesed:{bft:{gui_ghost:1b}}}
 execute unless data entity @s Items[{Slot:15b,tag:{cchesed:{bft:{gui_ghost:1b}}}}] run function cchesed:bft/gui/has_item_15
 execute unless data entity @s Items[{Slot:16b,tag:{cchesed:{bft:{gui_ghost:1b}}}}] run function cchesed:bft/gui/has_item_16
 
-
-# remove old output, if any
-item replace entity @s horse.9 with air
 
 # ------------------------------- check recipes ------------------------------ #
 
