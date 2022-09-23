@@ -1,0 +1,1 @@
+execute if data entity @s Items[{Slot:11b}] run function cchesed:bft/gui/replace_11

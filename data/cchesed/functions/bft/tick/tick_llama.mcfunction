@@ -6,20 +6,19 @@
 execute if score @s cc.ft.output_id matches 0.. unless data entity @s Items[{Slot:11b}] run function cchesed:bft/craft/_craft
 
 # spit out replaced gui items
+
 execute if data entity @s DecorItem run function cchesed:bft/gui/replace_decor
-execute unless data entity @s Items[{Slot:5b,tag:{cchesed:{bft:{gui_ghost:1b}}}}] if data entity @s Items[{Slot:5b}] run function cchesed:bft/gui/replace_5
-execute unless data entity @s Items[{Slot:6b,tag:{cchesed:{bft:{gui_ghost:1b}}}}] if data entity @s Items[{Slot:6b}] run function cchesed:bft/gui/replace_6
-execute unless data entity @s Items[{Slot:10b,tag:{cchesed:{bft:{gui_ghost:1b}}}}] if data entity @s Items[{Slot:10b}] run function cchesed:bft/gui/replace_10
-execute unless data entity @s Items[{Slot:11b,tag:{cchesed:{bft:{gui_ghost:1b}}}}] if data entity @s Items[{Slot:11b}] run function cchesed:bft/gui/replace_11
-execute unless data entity @s Items[{Slot:15b,tag:{cchesed:{bft:{gui_ghost:1b}}}}] if data entity @s Items[{Slot:15b}] run function cchesed:bft/gui/replace_15
-execute unless data entity @s Items[{Slot:16b,tag:{cchesed:{bft:{gui_ghost:1b}}}}] if data entity @s Items[{Slot:16b}] run function cchesed:bft/gui/replace_16
+
+execute unless data entity @s Items[{Slot:11b,tag:{cchesed:{bft:{gui_ghost:1b}}}}] run function cchesed:bft/gui/has_item_11
 
 # refill slot with the glass pane
-item replace entity @s horse.3 with light_gray_stained_glass_pane{display:{Name:'{"text":""}'},cchesed:{bft:{gui_ghost:1b}}}
-item replace entity @s horse.4 with light_gray_stained_glass_pane{display:{Name:'{"text":""}'},cchesed:{bft:{gui_ghost:1b}}}
-item replace entity @s horse.8 with light_gray_stained_glass_pane{display:{Name:'{"text":"→"}'},cchesed:{bft:{gui_ghost:1b}}}
-item replace entity @s horse.13 with light_gray_stained_glass_pane{display:{Name:'{"text":""}'},cchesed:{bft:{gui_ghost:1b}}}
-item replace entity @s horse.14 with light_gray_stained_glass_pane{display:{Name:'{"text":""}'},cchesed:{bft:{gui_ghost:1b}}}
+
+execute unless data entity @s Items[{Slot:5b,tag:{cchesed:{bft:{gui_ghost:1b}}}}] run function cchesed:bft/gui/has_item_5
+execute unless data entity @s Items[{Slot:6b,tag:{cchesed:{bft:{gui_ghost:1b}}}}] run function cchesed:bft/gui/has_item_6
+execute unless data entity @s Items[{Slot:10b,tag:{cchesed:{bft:{gui_ghost:1b}}}}] run function cchesed:bft/gui/has_item_10
+execute unless data entity @s Items[{Slot:15b,tag:{cchesed:{bft:{gui_ghost:1b}}}}] run function cchesed:bft/gui/has_item_15
+execute unless data entity @s Items[{Slot:16b,tag:{cchesed:{bft:{gui_ghost:1b}}}}] run function cchesed:bft/gui/has_item_16
+
 
 # remove old output, if any
 item replace entity @s horse.9 with air
