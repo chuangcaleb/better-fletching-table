@@ -10,5 +10,5 @@ kill @e[type=item,nbt={Item:{tag:{cchesed:{bft:{gui_ghost:1b}}}}}]
 
 
 # Rocket
-execute as @e[type=minecraft:firework_rocket,tag=!cc.ft.processed_rocket] run function cchesed:bft/proj/rocket/process
-execute as @e[tag=cc.ft.rocket_marker] unless predicate cchesed:bft/rocket_marker at @s run function cchesed:bft/proj/rocket/explode
+execute as @e[type=minecraft:firework_rocket,tag=!cc.ft.processed_rocket] run function cchesed:bft/items/rocket/process
+execute as @e[tag=cc.ft.rocket_marker] unless predicate cchesed:bft/rocket_marker at @s run function cchesed:bft/items/rocket/explode

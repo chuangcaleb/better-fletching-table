@@ -116,6 +116,9 @@
     "minecraft:red_wall_banner",
     "minecraft:black_wall_banner",
     "minecraft:water",
-    "minecraft:rail"
+    "minecraft:rail",
+    "minecraft:kelp_plant",
+    "minecraft:seagrass",
+    "minecraft:tall_seagrass"
   ]
 }

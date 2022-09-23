@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:target",
+        "item": {
+          "nbt": "{cchesed:{bft:{tnt_target:1b}}}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "cchesed:bft/items/tntt/place"
+  }
+}
