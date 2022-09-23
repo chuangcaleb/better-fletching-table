@@ -6,6 +6,7 @@
 execute if score @s cc.ft.output_id matches 0.. unless data entity @s Items[{Slot:11b}] run function cchesed:bft/craft/_craft
 
 # spit out replaced gui items
+execute if data entity @s DecorItem run function cchesed:bft/gui/replace_decor
 execute unless data entity @s Items[{Slot:5b,tag:{cchesed:{bft:{gui_ghost:1b}}}}] if data entity @s Items[{Slot:5b}] run function cchesed:bft/gui/replace_5
 execute unless data entity @s Items[{Slot:6b,tag:{cchesed:{bft:{gui_ghost:1b}}}}] if data entity @s Items[{Slot:6b}] run function cchesed:bft/gui/replace_6
 execute unless data entity @s Items[{Slot:10b,tag:{cchesed:{bft:{gui_ghost:1b}}}}] if data entity @s Items[{Slot:10b}] run function cchesed:bft/gui/replace_10
