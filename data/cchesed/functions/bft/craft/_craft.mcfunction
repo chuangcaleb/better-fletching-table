@@ -14,8 +14,10 @@ function cchesed:bft/craft/produce_output
 function cchesed:bft/craft/calc_min
 
 execute if score @s cc.ft.output_id matches 0..1 run data modify storage cchesed:bft StackOutputCount set value 1
-execute if score @s cc.ft.output_id matches 10..29 store result storage cchesed:bft StackOutputCount int 4 run scoreboard players get @s cc.ft.minimum
+execute if score @s cc.ft.output_id matches 10..19 store result storage cchesed:bft StackOutputCount int 4 run scoreboard players get @s cc.ft.minimum
+execute if score @s cc.ft.output_id matches 20..29 store result storage cchesed:bft StackOutputCount int 2 run scoreboard players get @s cc.ft.minimum
 execute if score @s cc.ft.output_id matches 30..39 store result storage cchesed:bft StackOutputCount int 1 run scoreboard players get @s cc.ft.minimum
+
 
 # -------------------------- Subtract material cost -------------------------- #
 

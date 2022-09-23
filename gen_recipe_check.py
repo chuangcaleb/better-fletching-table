@@ -23,13 +23,13 @@ output_t = Template(output_strt)
 
 slots = [
     "",
-    "gunpowder",
+    "flint",
     "",
-    "gunpowder",
-    "target",
-    "gunpowder",
     "",
-    "gunpowder",
+    "stick",
+    "",
+    "",
+    "phantom_membrane",
     "",
 ]
 
