@@ -1,4 +1,5 @@
 scoreboard players set @s cc.ft.minimum 64
+scoreboard players set @s cc.ft.temp 64
 
 execute if data entity @s Items[{Slot:2b}] store result score @s cc.ft.temp run data get entity @s Items[{Slot:2b}].Count 1
 execute if score @s cc.ft.temp < @s cc.ft.minimum run scoreboard players operation @s cc.ft.minimum = @s cc.ft.temp
