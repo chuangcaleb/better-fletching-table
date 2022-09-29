@@ -31,3 +31,6 @@ execute if data entity @s {Items:[{Slot:3b,id:"minecraft:gunpowder"},{Slot:7b,id
 
 # Phantom Arrow
 execute if data entity @s {Items:[{Slot:3b,id:"minecraft:flint"},{Slot:8b,id:"minecraft:stick"},{Slot:13b,id:"minecraft:phantom_membrane"}]} unless data entity @s {Items:[{Slot:2b}]} unless data entity @s {Items:[{Slot:4b}]} unless data entity @s {Items:[{Slot:7b}]} unless data entity @s {Items:[{Slot:9b}]} unless data entity @s {Items:[{Slot:12b}]} unless data entity @s {Items:[{Slot:14b}]} run function cchesed:bft/recipe/phantom
+
+# Underwater Missile
+execute if data entity @s Items[{id:"minecraft:gunpowder"}] if data entity @s Items[{id:"minecraft:dried_kelp"}] if data entity @s Items[{id:"minecraft:kelp"}] if score @s cc.ft.empty_slots matches 6 run function cchesed:bft/recipe/under_missile

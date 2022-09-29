@@ -26,7 +26,7 @@ slots = [
     "flint",
     "",
     "",
-    "stick",
+    "gunpowder",
     "",
     "",
     "phantom_membrane",

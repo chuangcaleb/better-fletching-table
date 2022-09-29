@@ -1,0 +1,2 @@
+execute if data entity @s FireworksItem.tag.cchesed.bft{rocket:1b} run function cchesed:bft/items/rocket/tntr/init_tntr
+execute if data entity @s FireworksItem.tag.cchesed.bft{rocket:2b} run function cchesed:bft/items/rocket/um/init_um

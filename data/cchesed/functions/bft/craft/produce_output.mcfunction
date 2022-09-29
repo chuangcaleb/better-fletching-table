@@ -25,5 +25,8 @@ execute if score @s cc.ft.output_id matches 31 run function cchesed:bft/craft/ut
 
 execute if score @s cc.ft.output_id matches 32 run data modify entity @e[limit=1,tag=cc.ft.drop_item] Item set value {id:"minecraft:target", Count:1b}
 
-execute if score @s cc.ft.output_id matches 33 run data modify entity @e[limit=1,tag=cc.ft.drop_item] Item set value {Enchantments:[{}],id:"minecraft:target", Count:1b, tag:{display:{Name:'{"text":"TNT Target","color":"yellow","italic":false}'},Enchantments:[{}], cchesed:{bft:{tnt_target:1b}}}}
+execute if score @s cc.ft.output_id matches 33 run data modify entity @e[limit=1,tag=cc.ft.drop_item] Item set value {id:"minecraft:target", Count:1b, tag:{display:{Name:'{"text":"TNT Target","color":"yellow","italic":false}'},Enchantments:[{}], cchesed:{bft:{tnt_target:1b}}}}
 
+
+
+execute if score @s cc.ft.output_id matches 34 run data modify entity @e[limit=1,tag=cc.ft.drop_item] Item set value {id:"minecraft:firework_rocket", Count:1b, tag:{display:{Name:'{"text":"Light Underwater Missile","color":"yellow","italic":false}'},Enchantments:[{}], cchesed:{bft:{rocket:2b}}}}
