@@ -10,7 +10,7 @@ execute unless block ~ ~2 ~ #cchesed:bft/water run tag @s remove cc.ft.water_adj
 execute unless block ~ ~3 ~ #cchesed:bft/water run tag @s remove cc.ft.water_adj
 
 execute if entity @s[tag=cc.ft.water_adj] run function cchesed:bft/items/tntt/activate/deep_charge
-execute unless entity @s[tag=cc.ft.water_adj] run summon tnt ~ ~ ~ {Fuse:0,Tags:["cc.ft.tntt_explosion"],CustomName:'{"text":"TNT Target","color":"yellow"}'}
+execute unless entity @s[tag=cc.ft.water_adj] run function cchesed:bft/items/tntt/activate/normal_charge
 
 
 # function cchesed:bft/items/tntt/activate/explode
