@@ -9,6 +9,11 @@ execute if data entity @s {Items:[{Slot:3b,id:"minecraft:stick"},{Slot:4b,id:"mi
 # Crossbow
 execute if data entity @s {Items:[{Slot:2b,id:"minecraft:stick"},{Slot:3b,id:"minecraft:iron_ingot"},{Slot:4b,id:"minecraft:stick"},{Slot:7b,id:"minecraft:string"},{Slot:8b,id:"minecraft:tripwire_hook"},{Slot:9b,id:"minecraft:string"},{Slot:13b,id:"minecraft:stick"}]} unless data entity @s {Items:[{Slot:12b}]} unless data entity @s {Items:[{Slot:14b}]} run function cchesed:bft/recipe/crossbow
 
+# Quiver
+execute if data entity @s Items[{id:"minecraft:goat_horn"}] if data entity @s Items[{id:"minecraft:string"}] if data entity @s Items[{id:"minecraft:leather"}] if data entity @s Items[{id:"minecraft:rabbit_hide"}] if score @s cc.ft.empty_slots matches 5 run function cchesed:bft/recipe/quiver
+
+
+
 # Arrow
 execute if data entity @s {Items:[{Slot:2b,id:"minecraft:flint"},{Slot:7b,id:"minecraft:stick"},{Slot:12b,id:"minecraft:feather"}]} unless data entity @s {Items:[{Slot:3b}]} unless data entity @s {Items:[{Slot:4b}]} unless data entity @s {Items:[{Slot:8b}]} unless data entity @s {Items:[{Slot:9b}]} unless data entity @s {Items:[{Slot:13b}]} unless data entity @s {Items:[{Slot:14b}]} run function cchesed:bft/recipe/arrow
 

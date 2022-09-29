@@ -2,6 +2,7 @@
 
 execute if score @s cc.ft.output_id matches 0 run data modify entity @e[limit=1,tag=cc.ft.drop_item] Item set value {id:"minecraft:bow", Count:1b}
 execute if score @s cc.ft.output_id matches 1 run data modify entity @e[limit=1,tag=cc.ft.drop_item] Item set value {id:"minecraft:crossbow", Count:1b}
+execute if score @s cc.ft.output_id matches 2 run data modify entity @e[limit=1,tag=cc.ft.drop_item] Item set value {id:"minecraft:goat_horn", Count:1b, tag:{display:{Name:'{"text":"Goat Horn Quiver","italic":false,"color":"yellow"}'},Enchantments:[{}],instrument:"",cchesed:{bft:{quiver:1b}}}}
 
 
 # ------------------------------ multiples of 4 ------------------------------ #
