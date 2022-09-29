@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_special_armordye",
+  "ingredients": [{ "item": "mineraft:air" }],
+  "result": [{ "item": "mineraft:air" }]
+}
+ar
