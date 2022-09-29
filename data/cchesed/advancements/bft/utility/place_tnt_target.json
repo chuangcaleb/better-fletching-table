@@ -11,6 +11,6 @@
     }
   },
   "rewards": {
-    "function": "cchesed:bft/items/tntt/place"
+    "function": "cchesed:bft/items/tntt/block/place"
   }
 }

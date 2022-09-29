@@ -5,6 +5,6 @@
     }
   },
   "rewards": {
-    "function": "cchesed:bft/items/tntt/hit_target"
+    "function": "cchesed:bft/items/tntt/activate/hit_target"
   }
 }
