@@ -14,4 +14,4 @@ execute as @e[type=minecraft:firework_rocket,tag=!cc.ft.processed_rocket] run fu
 execute as @e[tag=cc.ft.rocket_marker] unless predicate cchesed:bft/rocket_marker at @s run function cchesed:bft/items/rocket/switch_explode
 
 # Process Tipped Arrows
-execute as @e[type=arrow,tag=!cc.ft.proccesed_arrow] run function cchesed:bft/items/process_arrow
+execute as @e[tag=!cc.ft.proccesed_arrow,type=arrow] at @s run function cchesed:bft/items/process_arrow

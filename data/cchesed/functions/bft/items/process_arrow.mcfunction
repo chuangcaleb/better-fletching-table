@@ -1,2 +1,5 @@
-execute if entity @s[tag=!cc.ft.processed_phantom,nbt={Color:11052766}] run function cchesed:bft/items/init_phantom
+execute if entity @s[nbt={Color:11052766}] run function cchesed:bft/items/init_phantom
+
+execute unless entity @s[nbt={damage:2.0}] run function cchesed:bft/misc/power/init
+
 tag @s add cc.ft.proccesed_arrow
