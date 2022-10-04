@@ -16,14 +16,7 @@ Inventory
 3 4 5
 6 7 8
 
-
--1 None
-
-0 Bow
-1 Crossbow
-
-10 Arrow
-
+once every 100t, check all phantom arrows, if motion is about zero, then kill/turn into normal arrow
 
 underwater charges — TNT Rockets, but only work underwaters
 proximity explosions
@@ -32,6 +25,12 @@ handling multishot TNT rockets — predicate check for SelectedItemSlot with lef
 
 pitched sounds for hitting target block accuracy
 
-
 Turret
-https://gaming.stackexchange.com/questions/354812/summoning-an-arrow-aimed-at-a-mob/354836#354836
+<https://gaming.stackexchange.com/questions/354812/summoning-an-arrow-aimed-at-a-mob/354836#354836>
+
+0 - 1.0 - 2.0 = 2.0
+1 - 1.65 - 1.4 = 2.31
+2 - 1.35 - 1.8 = 2.43
+3 - 1.17 - 2.2 = 2.574
+4 - 1.06 - 2.6 = 2.756
+5 - 1.0 - 3.0 = 3.0
