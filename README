@@ -28,8 +28,6 @@ Turret
 
 perf: once every 100t, check all phantom arrows, if motion is about zero, then kill/turn into normal arrow
 
-blnc: Or let them stack in the offhand up to 16
-
 feat: pitched sounds for hitting target block accuracy
 
 feat: looting arrow, killing certain mobs drop appropriate tipped arrow — consume another item, one to one?
@@ -43,9 +41,11 @@ fix: piercing through block, if entity is right against block, tp back a bit5
 feat: force-field that deflects incoming projectiles — every activation costs an item
 
 - getting d-xyz, scaling, and adding vector component
-- reset flight time?
+- reset flight time?e
 - amethyst crystal?
 
 feat: Poison Spikes
 
 - arrow on pickup, apply poison
+
+feat: whistle arrows <https://www.reddit.com/r/minecraftsuggestions/comments/xtvkoe/whistle_arrows/>

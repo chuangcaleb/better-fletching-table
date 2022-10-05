@@ -13,3 +13,6 @@ execute if score .count_sum cc.ft.quiver matches 65..127 run function cchesed:bf
 execute if score .count_sum cc.ft.quiver matches 128..255 run function cchesed:bft/items/quiver/merge/128
 
 # execute if score .count_sum cc.ft.quiver matches 129.. run function cchesed:bft/items/quiver/merge/overflow_quiver
+
+# Replace quiver
+function cchesed:bft/items/quiver/swap/_swap_quiver
