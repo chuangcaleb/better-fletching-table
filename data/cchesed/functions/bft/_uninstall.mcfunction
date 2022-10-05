@@ -6,7 +6,7 @@ scoreboard objectives remove cc.ft.output_id
 
 scoreboard objectives remove cc.const
 
-scoreboard objectives remove cc.ft.temp
+scoreboard objectives remove cc.ft.slot_count
 scoreboard objectives remove cc.ft.minimum
 scoreboard objectives remove cc.ft.to_subtract
 scoreboard objectives remove cc.ft.empty_slots
