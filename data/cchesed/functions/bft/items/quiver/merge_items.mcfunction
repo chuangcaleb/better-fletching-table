@@ -16,3 +16,4 @@ execute if score .count_sum cc.ft.quiver matches 128..255 run function cchesed:b
 
 # Replace quiver
 function cchesed:bft/items/quiver/swap/_swap_quiver
+execute at @s run playsound minecraft:block.wood.step player @a[distance=..8] ~ ~ ~ 1 1.7

@@ -12,6 +12,6 @@
     }
   },
   "rewards": {
-    "function": "cchesed:bft/items/quiver/activate"
+    "function": "cchesed:bft/items/quiver/trigger"
   }
 }
