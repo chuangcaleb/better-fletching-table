@@ -28,7 +28,7 @@ Turret
 
 perf: once every 100t, check all phantom arrows, if motion is about zero, then kill/turn into normal arrow
 
-blnc: don't quiver stack TNT rockets. Or let them stack in the offhand up to 16
+blnc: Or let them stack in the offhand up to 16
 
 feat: pitched sounds for hitting target block accuracy
 

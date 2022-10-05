@@ -3,9 +3,6 @@
   "entity": "this",
   "predicate": {
     "equipment": {
-      "offhand": {
-        "tag": "cchesed:bft/projectiles"
-      },
       "mainhand": {
         "tag": "cchesed:bft/projectiles"
       }
