@@ -24,9 +24,7 @@ Turret
 2 - 1.35 - 1.8 = 2.43
 3 - 1.17 - 2.2 = 2.574
 4 - 1.06 - 2.6 = 2.756
-5 - 1.0 - 3.0 = 3.0
-
-fix: light underwater missile drop item is diff
+5 - 1.0 - 3.0 = 3.0e
 
 perf: once every 100t, check all phantom arrows, if motion is about zero, then kill/turn into normal arrow
 
@@ -53,5 +51,3 @@ feat: force-field that deflects incoming projectiles — every activation costs 
 feat: Poison Spikes
 
 - arrow on pickup, apply poison
-
-refac: cc.ft.count -> cc.const
