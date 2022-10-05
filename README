@@ -16,15 +16,6 @@ Inventory
 3 4 5
 6 7 8
 
-once every 100t, check all phantom arrows, if motion is about zero, then kill/turn into normal arrow
-
-underwater charges — TNT Rockets, but only work underwaters
-proximity explosions
-
-handling multishot TNT rockets — predicate check for SelectedItemSlot with left/right projectiles with rockets, replace item
-
-pitched sounds for hitting target block accuracy
-
 Turret
 <https://gaming.stackexchange.com/questions/354812/summoning-an-arrow-aimed-at-a-mob/354836#354836>
 
@@ -34,3 +25,33 @@ Turret
 3 - 1.17 - 2.2 = 2.574
 4 - 1.06 - 2.6 = 2.756
 5 - 1.0 - 3.0 = 3.0
+
+fix: light underwater missile drop item is diff
+
+perf: once every 100t, check all phantom arrows, if motion is about zero, then kill/turn into normal arrow
+
+blnc: handling multishot TNT rockets — predicate check for SelectedItemSlot with left/right projectiles with rockets, replace item
+
+blnc: don't quiver stack TNT rockets. Or let them stack in the offhand up to 16
+
+feat: pitched sounds for hitting target block accuracy
+
+feat: looting arrow, killing certain mobs drop appropriate tipped arrow — consume another item, one to one?
+
+feat: phantom arrows are piercing
+
+feat: piercing arrows go through blocks
+
+fix: piercing through block, if entity is right against block, tp back a bit5
+
+feat: force-field that deflects incoming projectiles — every activation costs an item
+
+- getting d-xyz, scaling, and adding vector component
+- reset flight time?
+- amethyst crystal?
+
+feat: Poison Spikes
+
+- arrow on pickup, apply poison
+
+refac: cc.ft.count -> cc.const

@@ -1,0 +1,12 @@
+{
+  "function": "minecraft:set_count",
+  "count": {
+    "type": "minecraft:score",
+    "target": {
+      "type": "minecraft:fixed",
+      "name": ".count_sum"
+    },
+    "score": "cc.ft.quiver",
+    "scale": 1
+  }
+}
