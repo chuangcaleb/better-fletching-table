@@ -1,6 +1,6 @@
 from string import Template
 
-content = "item replace entity @e[tag=cc.ft.quiver_swap,limit=1] weapon.mainhand from entity @s container.${item_slot}\nitem replace entity @s container.${item_slot} from entity @s weapon.mainhand\nitem replace entity @s weapon.mainhand from entity @e[tag=cc.ft.quiver_swap,limit=1] weapon.mainhand"
+content = "item replace entity @e[tag=cc.ft.quiver_swap,limit=1] weapon.mainhand from entity @s container.${item_slot}\nitem replace entity @s container.${item_slot} from entity @s weapon.offhand\nitem replace entity @s weapon.offhand from entity @e[tag=cc.ft.quiver_swap,limit=1] weapon.mainhand"
 # content = "execute if data entity @s Inventory[{Slot:${i}b,tag:{cchesed:{bft:{quiver:1b}}}}] run function cchesed:bft/items/quiver/swap/${i}"
 content_t = Template(content)
 
