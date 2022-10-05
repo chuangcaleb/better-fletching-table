@@ -2,8 +2,8 @@
 execute store result score @s cc.ft.power run data get entity @s damage 10
 
 # Get actual power value
-scoreboard players operation @s cc.ft.power -= .25 cc.ft.count
-scoreboard players operation @s cc.ft.power /= .5 cc.ft.count
+scoreboard players operation @s cc.ft.power -= .25 cc.const
+scoreboard players operation @s cc.ft.power /= .5 cc.const
 
 # Cap at Power V
 execute if score @s cc.ft.power matches 6.. run scoreboard players set @s cc.ft.power 5
@@ -11,18 +11,18 @@ execute if score @s cc.ft.power matches 6.. run scoreboard players set @s cc.ft.
 
 # # Add bonus damage mult from power level
 scoreboard players operation .bonus cc.ft.power = @s cc.ft.power
-scoreboard players operation .bonus cc.ft.power *= .5 cc.ft.count
+scoreboard players operation .bonus cc.ft.power *= .5 cc.const
 
 # ------------------------------ Get multiplier ------------------------------ #
 
-scoreboard players operation @s cc.ft.power *= .4 cc.ft.count
+scoreboard players operation @s cc.ft.power *= .4 cc.const
 # At least have 10, because that's the store result offset
-scoreboard players operation @s cc.ft.power += .10 cc.ft.count
+scoreboard players operation @s cc.ft.power += .10 cc.const
 
 
  # -------------------------- init damage/power value ------------------------ #
 # Set base power of 2.0
-scoreboard players operation .damage cc.ft.power = .2250 cc.ft.count
+scoreboard players operation .damage cc.ft.power = .2250 cc.const
 scoreboard players operation .damage cc.ft.power /= @s cc.ft.power
 
 scoreboard players operation .damage cc.ft.power += .bonus cc.ft.power

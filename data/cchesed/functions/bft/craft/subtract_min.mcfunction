@@ -1,7 +1,7 @@
 # function cchesed:bft/craft/calc_min
 
 scoreboard players operation @s cc.ft.to_subtract = @s cc.ft.minimum
-scoreboard players operation @s cc.ft.to_subtract *= .1 cc.ft.count
+scoreboard players operation @s cc.ft.to_subtract *= .-1 cc.const
 
 item replace entity @s horse.0 from entity @s horse.0 cchesed:bft/subtract_min
 item replace entity @s horse.1 from entity @s horse.1 cchesed:bft/subtract_min

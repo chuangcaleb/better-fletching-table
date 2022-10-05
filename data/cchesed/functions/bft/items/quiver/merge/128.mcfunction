@@ -1,5 +1,5 @@
 scoreboard players operation .count_rem cc.ft.quiver = .count_sum cc.ft.quiver
-scoreboard players operation .count_rem cc.ft.quiver -= .127 cc.ft.count
+scoreboard players operation .count_rem cc.ft.quiver -= .127 cc.const
 
 item replace entity @s weapon.offhand from entity @s weapon.offhand cchesed:bft/set_count_quiver_rem
 
