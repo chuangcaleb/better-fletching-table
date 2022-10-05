@@ -28,8 +28,6 @@ Turret
 
 perf: once every 100t, check all phantom arrows, if motion is about zero, then kill/turn into normal arrow
 
-blnc: handling multishot TNT rockets — predicate check for SelectedItemSlot with left/right projectiles with rockets, replace item
-
 blnc: don't quiver stack TNT rockets. Or let them stack in the offhand up to 16
 
 feat: pitched sounds for hitting target block accuracy

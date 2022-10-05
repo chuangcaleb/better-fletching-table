@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:crossbow"],
+            "nbt": "{Enchantments:[{id:\"minecraft:multishot\"}],ChargedProjectiles:[{tag:{cchesed:{bft:{rocket:1b}}}}]}"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "cchesed:bft/items/rocket/tntr/clr_ms/activate"
+  }
+}
