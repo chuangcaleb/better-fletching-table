@@ -24,3 +24,10 @@ scoreboard objectives add cc.ft.dy dummy
 scoreboard objectives add cc.ft.dz dummy
 
 scoreboard objectives add cc.ft.quiver dummy
+
+scoreboard objectives add cc.ft.pierce dummy
+scoreboard objectives add cc.ft.pierce_count dummy
+scoreboard objectives add cc.ft.pierce_g dummy
+scoreboard objectives add cc.ft.mx dummy
+scoreboard objectives add cc.ft.my dummy
+scoreboard objectives add cc.ft.mz dummy

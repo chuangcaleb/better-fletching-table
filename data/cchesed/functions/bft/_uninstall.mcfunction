@@ -17,6 +17,7 @@ scoreboard objectives remove cc.ft.dy
 scoreboard objectives remove cc.ft.dz
 
 scoreboard objectives remove cc.ft.quiver
+scoreboard objectives remove cc.ft.pierce_count
 
 # Remove tags
 tag @e remove cc.ft.processed_rocket
