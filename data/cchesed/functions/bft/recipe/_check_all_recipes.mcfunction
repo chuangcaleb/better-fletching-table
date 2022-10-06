@@ -25,6 +25,10 @@ execute if data entity @s {Items:[{Slot:4b,id:"minecraft:flint"},{Slot:9b,id:"mi
 # spectral arrow
 execute if data entity @s Items[{id:"minecraft:arrow"}] if data entity @s Items[{id:"minecraft:glowstone_dust"}] if score @s cc.ft.empty_slots matches 7 run function cchesed:bft/recipe/spectral_arrow
 
+# flaming arrow
+execute if data entity @s Items[{id:"minecraft:arrow"}] if data entity @s Items[{id:"minecraft:fire_charge"}] if score @s cc.ft.empty_slots matches 7 run function cchesed:bft/recipe/flaming
+
+
 # tntr
 execute if data entity @s Items[{id:"minecraft:firework_rocket",tag:{Fireworks:{Explosions:[{Type:1b}]}}}] if data entity @s Items[{id:"minecraft:tnt"}] if score @s cc.ft.empty_slots matches 7 run function cchesed:bft/recipe/tntr
 
