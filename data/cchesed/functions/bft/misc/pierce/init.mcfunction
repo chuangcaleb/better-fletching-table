@@ -1,8 +1,7 @@
 tag @s add cc.ft.pierce
 tag @s add cc.ft.tick
 
-data modify entity @s Glowing set value 1b
-# execute store result score @s cc.ft.pierce_count run data get entity @s PierceLevel
+# data modify entity @s Glowing set value 1b
 
 # Init Motion and PierceLevel for first tick
 execute store result score @s cc.ft.mx run data get entity @s Motion[0] 1000
