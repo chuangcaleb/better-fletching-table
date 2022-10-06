@@ -18,18 +18,7 @@
       "predicate": {
         "equipment": {
           "mainhand": {
-            "nbt": "{cchesed:{bft:{rocket:2b}}}"
-          }
-        }
-      }
-    },
-    {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "equipment": {
-          "mainhand": {
-            "nbt": "{cchesed:{bft:{phantom:1b}}}"
+            "nbt": "{cchesed:{bft:{stack_quiver:1b}}}"
           }
         }
       }
