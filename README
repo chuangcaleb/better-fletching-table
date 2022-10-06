@@ -32,11 +32,7 @@ feat: pitched sounds for hitting target block accuracy
 
 feat: looting arrow, killing certain mobs drop appropriate tipped arrow — consume another item, one to one?
 
-feat: phantom arrows are piercing
-
-feat: piercing arrows go through blocks
-
-fix: piercing through block, if entity is right against block, tp back a bit5
+fix: piercing through block, if entity is right against block, tp back a bit (but what about stationary mobs?) -> just say that the piercing treats the mob like the block
 
 feat: force-field that deflects incoming projectiles — every activation costs an item
 
