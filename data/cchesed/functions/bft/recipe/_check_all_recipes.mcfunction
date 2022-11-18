@@ -36,7 +36,7 @@ execute if data entity @s Items[{id:"minecraft:firework_rocket",tag:{Fireworks:{
 # Target
 execute if data entity @s {Items:[{Slot:3b,id:"minecraft:redstone"},{Slot:7b,id:"minecraft:redstone"},{Slot:8b,id:"minecraft:hay_block"},{Slot:9b,id:"minecraft:redstone"},{Slot:13b,id:"minecraft:redstone"}]} unless data entity @s {Items:[{Slot:2b}]} unless data entity @s {Items:[{Slot:4b}]} unless data entity @s {Items:[{Slot:12b}]} unless data entity @s {Items:[{Slot:14b}]} run function cchesed:bft/recipe/target
 execute if data entity @s {Items:[{Slot:3b,id:"minecraft:redstone"},{Slot:7b,id:"minecraft:redstone"},{Slot:8b,id:"minecraft:dried_kelp_block"},{Slot:9b,id:"minecraft:redstone"},{Slot:13b,id:"minecraft:redstone"}]} unless data entity @s {Items:[{Slot:2b}]} unless data entity @s {Items:[{Slot:4b}]} unless data entity @s {Items:[{Slot:12b}]} unless data entity @s {Items:[{Slot:14b}]} run function cchesed:bft/recipe/target
-# Target Bomb
+# TNT Target
 execute if data entity @s {Items:[{Slot:3b,id:"minecraft:gunpowder"},{Slot:7b,id:"minecraft:gunpowder"},{Slot:8b,id:"minecraft:target"},{Slot:9b,id:"minecraft:gunpowder"},{Slot:13b,id:"minecraft:gunpowder"}]} unless data entity @s {Items:[{Slot:2b}]} unless data entity @s {Items:[{Slot:4b}]} unless data entity @s {Items:[{Slot:12b}]} unless data entity @s {Items:[{Slot:14b}]} run function cchesed:bft/recipe/target_bomb
 
 # Phantom Arrow
