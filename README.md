@@ -2,6 +2,8 @@
 
 > Adds a GUI to Fletching Tables, along with custom Arrows and items!
 
+![cover-img](./bft-cover.jpeg)
+
 ---
 
 ## Motivation
