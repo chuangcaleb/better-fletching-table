@@ -8,19 +8,19 @@
 
 The Villager workstations all got GUIs: the Smithing Table, the Cartography Table, the Grindstone, even the Loom. Even the Composter, useless as it is, has some functionality as a Bone Meal source for Peaceful Mode.
 
-Except the <b>Fletching Table</b>. My poor boy.
+Except the **Fletching Table**. My poor boy.
 
-Besides that, <>Minecraft's ranged projectiles mechanics, tier progression and options are very shallow and limited</b>. You always only go for a maxed Power enchanted Bow with regular arrows just to pick up the quick and safe KO on mobs. No one practically crafts or mains the crossbow given the choice. The other arrow types are of such <b>inconsequential effects</b> that no one bothers to craft them, so they just smacked a band-aid on the symptom by liberally providing Spectral Arrows and Tipped Arrows from Piglin/Villager Trading.
+Besides that, <>Minecraft's ranged projectiles mechanics, tier progression and options are very shallow and limited**. You always only go for a maxed Power enchanted Bow with regular arrows just to pick up the quick and safe KO on mobs. No one practically crafts or mains the crossbow given the choice. The other arrow types are of such**inconsequential effects** that no one bothers to craft them, so they just smacked a band-aid on the symptom by liberally providing Spectral Arrows and Tipped Arrows from Piglin/Villager Trading.
 
 ## Design
 
 To introduce interesting ranged combat mechanics, we must first introduce a way to obtain them. Silly vanilla crafting doesn't allow NBT outputs, so we'll have to make our own custom GUI!
 
-<b>The new Fletching Table GUI is a familiar 3x3 crafting grid</b> that allows us to craft all the new special custom items.
+**The new Fletching Table GUI is a familiar 3x3 crafting grid** that allows us to craft all the new special custom items.
 
-The new Arrow types should give <b>wider options of meaningful choices</b> for the player to choose, whilst requiring materials that are not necessarily plentiful, but <u>an adventure itself to obtain</u>. The <b>Rockets ammunition and Piercing buff</b> should give players a reason to use the Crossbow. <b>Improving on old boring mechanics</b> and <b>introducing new utility items</b> will force players to <u>rethink their style of play</u> and <u>come up with creative new strategies</u>!
+The new Arrow types should give **wider options of meaningful choices** for the player to choose, whilst requiring materials that are not necessarily plentiful, but an adventure itself to obtain. The **Rockets ammunition and Piercing buff** should give players a reason to use the Crossbow. **Improving on old boring mechanics** and **introducing new utility items** will force players to rethink their style of play and come up with creative new strategies!
 
-This data pack was designed to work alongside my other data pack, [Cycle Offhand Arrows](https://github.com/chuangcaleb/cycle-offhand-arrows), which allows you to<b> cycle through arrow types in the offhand slot by using your offhand key whilst holding a Bow or Crossbow</b>! ﻿I heavily advocate this utility data pack in general for any world!
+This data pack was designed to work alongside my other data pack, [Cycle Offhand Arrows](https://github.com/chuangcaleb/cycle-offhand-arrows), which allows you to**cycle through arrow types in the offhand slot by using your offhand key whilst holding a Bow or Crossbow**! ﻿I heavily advocate this utility data pack in general for any world!
 
 ---
 
@@ -32,7 +32,7 @@ This data pack was designed to work alongside my other data pack, [Cycle Offhand
 
 The vanilla Bow enchantment to always get is Power. Just like Sharpness, it's a flat simple damage increase, who doesn't want that? That's BORING. Power also makes combat boring once you start two-shotting every 10-heart mob.
 
-WIth this data pack, Power works differently; <b>a Power bow now makes your arrows fly faster.</b>
+WIth this data pack, Power works differently; **a Power bow now makes your arrows fly faster.**
 
 This opens up a very different playstyle compared to Crossbows, or even vanilla Bows. The difference is most noticeable on partially-charged shots; a Power V Bow on minimal charge flies as fast as a fully-charged Power I Bow!
 
@@ -43,53 +43,6 @@ Yet, I recognize that increased arrow damage is important because you barely tak
 Arrow damage is calculated as:
 
 > Effective Damage Value = Arrow `damage` NBT Value x Velocity on Impact
-
-<table>
-<tbody>
-<tr>
-<td>Power Level</td>
-<td>Updated `damage` NBT Value</td>
-<td>Target `damage` NBT Value</td>
-<td>Target Initial Effective Damage Value</td>
-</tr>
-<tr>
-<td><center>0</center></td>
-<td>1.0</td>
-<td>2.0</td>
-<td>2.0</td>
-</tr>
-<tr>
-<td><center>1</center></td>
-<td>1.65</td>
-<td>1.4</td>
-<td>2.31</td>
-</tr>
-<tr>
-<td><center>2</center></td>
-<td>1.35</td>
-<td>1.8</td>
-<td>2.43</td>
-</tr>
-<tr>
-<td><center>3</center></td>
-<td>1.17</td>
-<td>2.2</td>
-<td>2.574</td>
-</tr>
-<tr>
-<td><center>4</center></td>
-<td>1.06</td>
-<td>2.6</td>
-<td>2.756</td>
-</tr>
-<tr>
-<td><center>5</center></td>
-<td>1.0</td>
-<td>3.0</td>
-<td>3.0</td>
-</tr>
-</tbody>
-</table>
 
 Since we are going to crazy values of initial velocity, we have to scale down the arbitrary damage coefficient of Power V arrows.
 
@@ -197,7 +150,7 @@ The TNT Target's explosion will only damage mobs, and will not destroy blocks (a
 
 Speaking of which: TNT Target blocks explode with the equivalent firepower of a TNT on land, but if detonated underwater, the "water pressure" gives the depth charge an explosion power of a Supercharged Creeper. Do with that what you will.
 
-It is crafted with <b>1 Target Block + 4 Gunpowder (surrounding) → 1 TNT Target</b>. It looks like an enchanted Target Block. Place it down like any other block, and though it looks like a regular Target Block when placed down, there will also be smoke particles and a fizzing sound. In the rare times where the raycasting fails to place the custom block, you will be given back the 4 Gunpowder used to craft the TNT Target.
+It is crafted with **1 Target Block + 4 Gunpowder (surrounding) → 1 TNT Target**. It looks like an enchanted Target Block. Place it down like any other block, and though it looks like a regular Target Block when placed down, there will also be smoke particles and a fizzing sound. In the rare times where the raycasting fails to place the custom block, you will be given back the 4 Gunpowder used to craft the TNT Target.
 
 #### TNT Target Block — Notes
 
@@ -217,7 +170,7 @@ Note that this over-stacking of arrows currently only applies to regular Arrows 
 
 #### Horn Quiver — Caveats
 
-Number one is that <b>any item slot/stack with a count of more than 64 will always act funny.</b> You'll quickly notice that picking up the over-stack of arrows and placing it back into your inventory slots will break the over-stack and revert it back to a max-64 stack: <b>you can't move the over-stack of arrows without breaking it.</b> Furthermore, new arrows of the same arrow type that you pick up won't join the over-stack (if you have 1 slot of 100 Arrows and you pick 1 more Arrow up, then you will have two slots, one at 100 Arrows and one at 1 Arrow: <b>new arrows don't join the over-stack.</b> You can use the number keys to move the over-stack around from your hotter, but that's about it. A custom max-stack count is way easier implemented with a mod.
+Number one is that **any item slot/stack with a count of more than 64 will always act funny.** You'll quickly notice that picking up the over-stack of arrows and placing it back into your inventory slots will break the over-stack and revert it back to a max-64 stack: **you can't move the over-stack of arrows without breaking it.** Furthermore, new arrows of the same arrow type that you pick up won't join the over-stack (if you have 1 slot of 100 Arrows and you pick 1 more Arrow up, then you will have two slots, one at 100 Arrows and one at 1 Arrow: **new arrows don't join the over-stack.** You can use the number keys to move the over-stack around from your hotter, but that's about it. A custom max-stack count is way easier implemented with a mod.
 
 Secondly, if the Horn Quiver leaves your inventory, the over-stack of arrows will remain stacked; there is no check to break the over-stack if the Horn Quiver is not in the inventory anymore, though it can certainly be implemented later on.
 
@@ -237,4 +190,4 @@ Large credit to and permission granted by [Avexus02](https://www.planetminecraft
 
 This is a complete rework of my previous [Improved Fletching Tables Data Pack](https://www.planetminecraft.com/data-pack/improved-fletching-tables/), and the two data packs are not meant to be compatible. Please uninstall the old data pack before using this one.
 
-Reminder: this data pack was designed to work alongside my other data pack, [Cycle Offhand Arrows](https://github.com/chuangcaleb/cycle-offhand-arrows/), which allows you to<b> cycle through arrow types in the offhand slot by using your offhand key whilst holding a Bow or Crossbow</b>! With all these new arrows and improved bow mechanics, you will need this utility data pack!
+Reminder: this data pack was designed to work alongside my other data pack, [Cycle Offhand Arrows](https://github.com/chuangcaleb/cycle-offhand-arrows/), which allows you to**cycle through arrow types in the offhand slot by using your offhand key whilst holding a Bow or Crossbow**! With all these new arrows and improved bow mechanics, you will need this utility data pack!
