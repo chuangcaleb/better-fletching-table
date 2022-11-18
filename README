@@ -10,7 +10,7 @@ The Villager workstations all got GUIs: the Smithing Table, the Cartography Tabl
 
 Except the **Fletching Table**. My poor boy.
 
-Besides that, <>Minecraft's ranged projectiles mechanics, tier progression and options are very shallow and limited**. You always only go for a maxed Power enchanted Bow with regular arrows just to pick up the quick and safe KO on mobs. No one practically crafts or mains the crossbow given the choice. The other arrow types are of such**inconsequential effects** that no one bothers to craft them, so they just smacked a band-aid on the symptom by liberally providing Spectral Arrows and Tipped Arrows from Piglin/Villager Trading.
+Besides that, Minecraft's ranged projectiles mechanics, tier progression and options are very shallow and limited**. You always only go for a maxed Power enchanted Bow with regular arrows just to pick up the quick and safe KO on mobs. No one practically crafts or mains the crossbow given the choice. The other arrow types are of such**inconsequential effects** that no one bothers to craft them, so they just smacked a band-aid on the symptom by liberally providing Spectral Arrows and Tipped Arrows from Piglin/Villager Trading.
 
 ## Design
 
@@ -43,6 +43,53 @@ Yet, I recognize that increased arrow damage is important because you barely tak
 Arrow damage is calculated as:
 
 > Effective Damage Value = Arrow `damage` NBT Value x Velocity on Impact
+
+<table>
+<tbody>
+<tr>
+<td>Power Level</td>
+<td>Updated `damage` NBT Value</td>
+<td>Target `damage` NBT Value</td>
+<td>Target Initial Effective Damage Value</td>
+</tr>
+<tr>
+<td><center>0</center></td>
+<td>1.0</td>
+<td>2.0</td>
+<td>2.0</td>
+</tr>
+<tr>
+<td><center>1</center></td>
+<td>1.65</td>
+<td>1.4</td>
+<td>2.31</td>
+</tr>
+<tr>
+<td><center>2</center></td>
+<td>1.35</td>
+<td>1.8</td>
+<td>2.43</td>
+</tr>
+<tr>
+<td><center>3</center></td>
+<td>1.17</td>
+<td>2.2</td>
+<td>2.574</td>
+</tr>
+<tr>
+<td><center>4</center></td>
+<td>1.06</td>
+<td>2.6</td>
+<td>2.756</td>
+</tr>
+<tr>
+<td><center>5</center></td>
+<td>1.0</td>
+<td>3.0</td>
+<td>3.0</td>
+</tr>
+</tbody>
+</table>
 
 Since we are going to crazy values of initial velocity, we have to scale down the arbitrary damage coefficient of Power V arrows.
 
