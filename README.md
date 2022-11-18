@@ -10,7 +10,7 @@ The Villager workstations all got GUIs: the Smithing Table, the Cartography Tabl
 
 Except the **Fletching Table**. My poor boy.
 
-Besides that, Minecraft's ranged projectiles mechanics, tier progression and options are very shallow and limited**. You always only go for a maxed Power enchanted Bow with regular arrows just to pick up the quick and safe KO on mobs. No one practically crafts or mains the crossbow given the choice. The other arrow types are of such**inconsequential effects** that no one bothers to craft them, so they just smacked a band-aid on the symptom by liberally providing Spectral Arrows and Tipped Arrows from Piglin/Villager Trading.
+Besides that, **Minecraft's ranged projectiles mechanics, tier progression and options are very shallow and limited**. You always only go for a maxed Power enchanted Bow with regular arrows just to pick up the quick and safe KO on mobs. No one practically crafts or mains the crossbow given the choice. The other arrow types are of such**inconsequential effects** that no one bothers to craft them, so they just smacked a band-aid on the symptom by liberally providing Spectral Arrows and Tipped Arrows from Piglin/Villager Trading.
 
 ## Design
 
