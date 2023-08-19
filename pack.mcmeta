@@ -1,6 +1,6 @@
 {
   "pack": {
-    "pack_format": 9,
+    "pack_format": 15,
     "description": "Adds a GUI to Fletching Tables, along with custom Arrows and items!\nAuthor: cchesed"
   }
 }
