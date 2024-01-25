@@ -1,5 +1,10 @@
-execute as @s[tag=cc.ft.llama] at @s if entity @p[distance=..6] run function cchesed:bft/tick/tick_llama
+execute as @s[tag=cc.ft.tick] run function cchesed:bft/tick/tick_entity_tagged
 
-execute as @s[tag=cc.ft.rocket_marker] unless predicate cchesed:bft/rocket_marker at @s run function cchesed:bft/items/rocket/switch_explode
+# remove all gui_ghost items
+kill @s[type=item,nbt={Item: {tag: {cchesed: {bft: {gui_ghost: 1b}}}}}]
 
-execute as @s[tag=cc.ft.pierce] at @s run function cchesed:bft/misc/pierce/tick
+# Rocket
+execute as @s[type=minecraft:firework_rocket,tag=!cc.ft.processed_rocket] run function cchesed:bft/items/rocket/process
+
+# Process (Tipped + Spectral) Arrows
+execute as @s[type=#cchesed:bft/all_arrows,tag=!cc.ft.proccesed_arrow] at @s run function cchesed:bft/items/process_arrow
