@@ -1,0 +1,13 @@
+[
+  {
+    "function": "minecraft:copy_nbt",
+    "source": "this",
+    "ops": [
+      {
+        "source": "Pos",
+        "target": "cchesed.bft.chorus.Pos",
+        "op": "replace"
+      }
+    ]
+  }
+]

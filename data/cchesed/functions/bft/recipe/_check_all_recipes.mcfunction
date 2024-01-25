@@ -11,12 +11,7 @@ execute if data entity @s {Items: [{Slot: 2b, id: "minecraft:stick"}, {Slot: 3b,
 
 
 # Arrow
-execute if data entity @s {Items: [{Slot: 2b, id: "minecraft:flint"}, {Slot: 7b, id: "minecraft:stick"}, {Slot: 12b, id: "minecraft:feather"}]} unless data entity @s {Items: [{Slot: 3b}]} unless data entity @s {Items: [{Slot: 4b}]} unless data entity @s {Items: [{Slot: 8b}]} unless data entity @s {Items: [{Slot: 9b}]} unless data entity @s {Items: [{Slot: 13b}]} unless data entity @s {Items: [{Slot: 14b}]} run function cchesed:bft/recipe/arrow
-
 execute if data entity @s {Items: [{Slot: 3b, id: "minecraft:flint"}, {Slot: 8b, id: "minecraft:stick"}, {Slot: 13b, id: "minecraft:feather"}]} unless data entity @s {Items: [{Slot: 2b}]} unless data entity @s {Items: [{Slot: 4b}]} unless data entity @s {Items: [{Slot: 7b}]} unless data entity @s {Items: [{Slot: 9b}]} unless data entity @s {Items: [{Slot: 12b}]} unless data entity @s {Items: [{Slot: 14b}]} run function cchesed:bft/recipe/arrow
-
-execute if data entity @s {Items: [{Slot: 4b, id: "minecraft:flint"}, {Slot: 9b, id: "minecraft:stick"}, {Slot: 14b, id: "minecraft:feather"}]} unless data entity @s {Items: [{Slot: 2b}]} unless data entity @s {Items: [{Slot: 3b}]} unless data entity @s {Items: [{Slot: 7b}]} unless data entity @s {Items: [{Slot: 8b}]} unless data entity @s {Items: [{Slot: 12b}]} unless data entity @s {Items: [{Slot: 13b}]} run function cchesed:bft/recipe/arrow
-
 
 # spectral arrow
 execute if data entity @s Items[{id: "minecraft:arrow"}] if data entity @s Items[{id: "minecraft:glowstone_dust"}] if score @s cc.ft.empty_slots matches 7 run function cchesed:bft/recipe/spectral_arrow
@@ -36,6 +31,9 @@ execute if data entity @s {Items: [{Slot: 3b, id: "minecraft:redstone"}, {Slot: 
 
 # Phantom Arrow
 execute if data entity @s {Items: [{Slot: 3b, id: "minecraft:flint"}, {Slot: 8b, id: "minecraft:stick"}, {Slot: 13b, id: "minecraft:phantom_membrane"}]} unless data entity @s {Items: [{Slot: 2b}]} unless data entity @s {Items: [{Slot: 4b}]} unless data entity @s {Items: [{Slot: 7b}]} unless data entity @s {Items: [{Slot: 9b}]} unless data entity @s {Items: [{Slot: 12b}]} unless data entity @s {Items: [{Slot: 14b}]} run function cchesed:bft/recipe/phantom
+
+# Chorus Arrow
+execute if data entity @s {Items: [{Slot: 3b, id: "minecraft:flint"}, {Slot: 8b, id: "minecraft:stick"}, {Slot: 13b, id: "minecraft:chorus_fruit"}]} unless data entity @s {Items: [{Slot: 2b}]} unless data entity @s {Items: [{Slot: 4b}]} unless data entity @s {Items: [{Slot: 7b}]} unless data entity @s {Items: [{Slot: 9b}]} unless data entity @s {Items: [{Slot: 12b}]} unless data entity @s {Items: [{Slot: 14b}]} run function cchesed:bft/recipe/chorus
 
 # Underwater Missile
 execute if data entity @s Items[{id: "minecraft:gunpowder"}] if data entity @s Items[{id: "minecraft:dried_kelp"}] if data entity @s Items[{id: "minecraft:kelp"}] if score @s cc.ft.empty_slots matches 6 run function cchesed:bft/recipe/under_missile

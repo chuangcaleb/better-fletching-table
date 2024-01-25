@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {},
+        "items": [
+          {
+            "items": [
+              "minecraft:crossbow"
+            ],
+            "nbt": "{Charged: 1b, ChargedProjectiles:[{tag:{cchesed:{bft:{chorus:1b}}}}]}"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "cchesed:bft/items/chorus/handle_load_cb"
+  }
+}

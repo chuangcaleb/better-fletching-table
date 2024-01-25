@@ -14,7 +14,9 @@ execute if score @s cc.ft.output_id matches 10 run data modify entity @e[limit=1
 
 # ------------------------------ multiples of 2 ------------------------------ #
 
-execute if score @s cc.ft.output_id matches 20 run data modify entity @e[limit=1,tag=cc.ft.drop_item] Item set value {id: "minecraft:tipped_arrow", Count: 2b, tag: {display: {Name: '{"text":"Phantom Arrow","italic":false}'}, cc.ft.pa: 1, CustomPotionColor: 11052766, HideFlags: 32, cchesed: {bft: {phantom: 1b}}}}
+execute if score @s cc.ft.output_id matches 20 run data modify entity @e[limit=1,tag=cc.ft.drop_item] Item set value {id: "minecraft:tipped_arrow", Count: 2b, tag: {display: {Name: '{"text":"Phantom Arrow","italic":false}'}, CustomPotionColor: 11052766, HideFlags: 32, cchesed: {bft: {phantom: 1b}}}}
+
+execute if score @s cc.ft.output_id matches 21 run data modify entity @e[limit=1,tag=cc.ft.drop_item] Item set value {id: "minecraft:tipped_arrow", Count: 2b, tag: {display: {Name: '{"text":"Chorus Arrow","italic":false}'}, CustomPotionColor: 10715551, HideFlags: 32, cchesed: {bft: {chorus: 1b}}}}
 
 
 # ------------------------------ multiples of 1 ------------------------------ #

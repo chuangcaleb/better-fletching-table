@@ -1,0 +1,1 @@
+execute on origin run function cchesed:bft/items/chorus/init_on_origin
