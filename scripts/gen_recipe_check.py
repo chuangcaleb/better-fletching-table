@@ -1,5 +1,5 @@
-from string import Template
 import subprocess
+from string import Template
 
 
 def write_to_clipboard(output):

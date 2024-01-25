@@ -1,2 +1,2 @@
-execute at @a[tag=cc.ft.glow_killer] at @e[type=experience_orb,distance=..128,nbt={Age:0s},sort=nearest,limit=1] run summon item ~ ~ ~ {Item:{id:"minecraft:glowstone_dust",Count:1b}}
+execute at @a[tag=cc.ft.glow_killer] at @e[type=experience_orb,distance=..128,nbt={Age: 0s},sort=nearest,limit=1] run summon item ~ ~ ~ {Item: {id: "minecraft:glowstone_dust", Count: 1b}}
 tag @a remove cc.ft.glow_killer

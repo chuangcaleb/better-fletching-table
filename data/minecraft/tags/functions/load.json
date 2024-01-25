@@ -1,3 +1,6 @@
 {
-  "values": ["cchesed:bft/load", "cchesed:bft/tick/tick_100t"]
+  "values": [
+    "cchesed:bft/load",
+    "cchesed:bft/tick/tick_100t"
+  ]
 }

@@ -10,7 +10,7 @@ scoreboard players remove @s cc.ft.pierce_count 1
 
 particle minecraft:crit ~ ~ ~ 0 0 0 0 10 normal
 
-data merge entity @s {inGround:0b}
+data merge entity @s {inGround: 0b}
 # tag @s remove cc.ft.inground
 # data merge entity @s {inGround:0b,crit:1b}
 
@@ -18,7 +18,7 @@ data merge entity @s {inGround:0b}
 #                                    raycast                                   #
 # ---------------------------------------------------------------------------- #
 
-summon marker ~ ~ ~ {Tags:[cc.ft.pierce_marker]}
+summon marker ~ ~ ~ {Tags: [cc.ft.pierce_marker]}
 
 # -------------------- get next tick's pos to face towards ------------------- #
 
@@ -48,7 +48,7 @@ execute store result entity @s PierceLevel byte 1 run scoreboard players get @s 
 
 execute at @s if block ~ ~ ~ #cchesed:bft/transparent run particle minecraft:crit ~ ~ ~ 0 0 0 0 10 normal
 
-execute at @s unless block ~ ~ ~ #cchesed:bft/transparent run data merge entity @s {inGround:1b}
+execute at @s unless block ~ ~ ~ #cchesed:bft/transparent run data merge entity @s {inGround: 1b}
 
 # ---------------------------------------------------------------------------- #
 #                                    cleanup                                   #

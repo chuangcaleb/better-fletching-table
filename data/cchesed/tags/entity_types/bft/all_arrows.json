@@ -1,4 +1,7 @@
 {
   "replace": false,
-  "values": ["minecraft:arrow", "minecraft:spectral_arrow"]
+  "values": [
+    "minecraft:arrow",
+    "minecraft:spectral_arrow"
+  ]
 }

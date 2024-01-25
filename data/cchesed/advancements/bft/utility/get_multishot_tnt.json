@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "items": ["minecraft:crossbow"],
+            "items": [
+              "minecraft:crossbow"
+            ],
             "nbt": "{Enchantments:[{id:\"minecraft:multishot\"}],ChargedProjectiles:[{tag:{cchesed:{bft:{rocket:1b}}}}]}"
           }
         ]
