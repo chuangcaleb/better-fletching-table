@@ -16,7 +16,6 @@ scoreboard objectives remove cc.ft.dx
 scoreboard objectives remove cc.ft.dy
 scoreboard objectives remove cc.ft.dz
 
-scoreboard objectives remove cc.ft.quiver
 scoreboard objectives remove cc.ft.pierce_count
 
 # Remove tags

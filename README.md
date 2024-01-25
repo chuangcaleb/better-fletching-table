@@ -187,41 +187,9 @@ After making TNT Rockets relatively expensive, I've also added Light Underwater 
 
 These are crafted very cheap with 1 Gunpowder + 1 Kelp + 1 Dried Kelp → 1 Light Underwater Missile. They have an ExplosionPower of 3, but only when it explodes underwater. If it explodes elsewhere, it fizzles and drops itself as an item. However, these Missiles stack up to 64 and unlike Arrows, they are not affected by gravity in water, so you could spend them lavishly just like how you can spam cheap regular Arrows on land!
 
-### Target Block & TNT Target Block
-
-> Volatile red-explosive-barrels!
+### Target Block
 
 Target blocks have their crafting recipe moved over to the Fletching Table, since they are arrow/shooting-related. As an added utility, you can use Dried Kelp Blocks in the place of Hay Blocks to craft Target blocks!
-
-But more importantly: the TNT Target block. Isn't it so thrilling when a bunch of enemies group up, and you shoot at a red explosive barrel and it explodes at the perfect moment, taking all of them out? That's the TNT Target block.
-
-The TNT Target's explosion will only damage mobs, and will not destroy blocks (as if detonating underwater), to assist in liberally scattering TNT Target blocks anywhere in your intricately decorated base/village during a Raid.
-
-Speaking of which: TNT Target blocks explode with the equivalent firepower of a TNT on land, but if detonated underwater, the "water pressure" gives the depth charge an explosion power of a Supercharged Creeper. Do with that what you will.
-
-It is crafted with **1 Target Block + 4 Gunpowder (surrounding) → 1 TNT Target**. It looks like an enchanted Target Block. Place it down like any other block, and though it looks like a regular Target Block when placed down, there will also be smoke particles and a fizzing sound. In the rare times where the raycasting fails to place the custom block, you will be given back the 4 Gunpowder used to craft the TNT Target.
-
-#### TNT Target Block — Notes
-
-The condition for a TNT Target block being "underwater" to explode with a Supercharged Creeper is that at least one of its sides must be adjacent to a water block (including seagrass, kelp, bubble columns etc.) and must have three blocks of water above it.
-
-### Horn Quiver
-
-> Arrows stack up to 127 items per slot in your inventory!
-
-With the inventory management problem worsening with the growing number of new items in Minecraft, as well as change to make Power-enchanted Arrows deal less damage, there is a need for handling the stacks of arrows in your inventory.
-
-It is crafted shapelessly with 1 Goat Horn + 1 Leather + 1 Rabbit Hide + 1 String → 1 Horn Quiver. First, hold the same arrow type in your mainhand and offhand at the same time, and then open your inventory. Pick up the Horn Quiver from your inventory and put it down in the inventory slot that you want the combined stack to combine into. The arrows from your mainland and offhand will stack into that slot up till 127 arrows, and any extra arrows will remain in your hands.
-
-This gives an extra reason to get goat horns
-
-Note that this over-stacking of arrows currently only applies to regular Arrows and Spectral Arrows, because the other (tipped) arrows and rockets are too overpowered to stack more than 64. (Imagine stacks of stacks of 127 Instant Damage II Tipped Arrows)
-
-#### Horn Quiver — Caveats
-
-Number one is that **any item slot/stack with a count of more than 64 will always act funny.** You'll quickly notice that picking up the over-stack of arrows and placing it back into your inventory slots will break the over-stack and revert it back to a max-64 stack: **you can't move the over-stack of arrows without breaking it.** Furthermore, new arrows of the same arrow type that you pick up won't join the over-stack (if you have 1 slot of 100 Arrows and you pick 1 more Arrow up, then you will have two slots, one at 100 Arrows and one at 1 Arrow: **new arrows don't join the over-stack.** You can use the number keys to move the over-stack around from your hotter, but that's about it. A custom max-stack count is way easier implemented with a mod.
-
-Secondly, if the Horn Quiver leaves your inventory, the over-stack of arrows will remain stacked; there is no check to break the over-stack if the Horn Quiver is not in the inventory anymore, though it can certainly be implemented later on.
 
 ---
 
