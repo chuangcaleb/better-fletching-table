@@ -1,4 +1,4 @@
-# Increment counter 
+# Increment counter
 scoreboard players add @s cc.ft.raycast_counter 1
 
 # If still within limit, and current block is transparent, raycast forward

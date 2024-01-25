@@ -1,1 +1,0 @@
-execute as @e[tag=cc.ft.tntt_rplc] at @s run function cchesed:bft/items/tntt/activate/replace_water_marker 
