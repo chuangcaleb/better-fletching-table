@@ -21,18 +21,6 @@ jobs:
         run: |
           echo "::set-output name=tag_name::$(git tag --sort version:refname | tail -n 1)"
 
-      # - name: Create Release
-      #   id: create_release
-      #   uses: actions/create-release@v1
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #     VERSION: ${{ github.ref }}
-      #   with:
-      #     tag_name: ${{ github.ref }}
-      #     release_name: ${{ github.ref }}
-      #     draft: false
-      #     prerelease: false
-
       - name: Archive Binaries
         uses: thedoctor0/zip-release@0.7.5
         with:
@@ -47,14 +35,3 @@ jobs:
             ${{ env.PROJECT_NAME }}-dpv${{ steps.get_tag.outputs.tag_name }}.zip
             README.md
             LICENSE
-
-      # - name: Upload zip file
-      #   id: upload-zip
-      #   uses: actions/upload-release-asset@v1
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   with:
-      #     upload_url: ${{ steps.create_release.outputs.upload_url }}
-      #     asset_path: ./${{ env.PROJECT_NAME }}.zip
-      #     asset_name: ${{ env.PROJECT_NAME }}-${{ steps.build.outputs.tag_name }}.zip
-      #     asset_content_type: application/zip
