@@ -12,7 +12,7 @@ The Villager workstations all got GUIs: the Smithing Table, the Cartography Tabl
 
 Except the **Fletching Table**. My poor boy.
 
-Besides that, **Minecraft's ranged projectiles mechanics, tier progression and options are very shallow and limited**. You always only go for a maxed Power enchanted Bow with regular arrows just to pick up the quick and safe KO on mobs. No one practically crafts or mains the crossbow given the choice. The other arrow types are of such**inconsequential effects** that no one bothers to craft them, so they just smacked a band-aid on the symptom by liberally providing Spectral Arrows and Tipped Arrows from Piglin/Villager Trading.
+Besides that, **Minecraft's ranged projectiles mechanics, tier progression and options are very shallow and limited**. You always only go for a maxed Power enchanted Bow with regular arrows just to pick up the quick and safe KO on mobs. No one practically crafts or mains the crossbow given the choice. The other arrow types are of such **inconsequential effects** that no one bothers to craft them, so they just smacked a band-aid on the symptom by liberally providing Spectral Arrows and Tipped Arrows from Piglin/Villager Trading.
 
 ## Design
 
@@ -22,7 +22,7 @@ To introduce interesting ranged combat mechanics, we must first introduce a way 
 
 The new Arrow types should give **wider options of meaningful choices** for the player to choose, whilst requiring materials that are not necessarily plentiful, but an adventure itself to obtain. The **Rockets ammunition and Piercing buff** should give players a reason to use the Crossbow. **Improving on old boring mechanics** and **introducing new utility items** will force players to rethink their style of play and come up with creative new strategies!
 
-This data pack was designed to work alongside my other data pack, [Cycle Offhand Arrows](https://github.com/chuangcaleb/cycle-offhand-arrows), which allows you to**cycle through arrow types in the offhand slot by using your offhand key whilst holding a Bow or Crossbow**! ﻿I heavily advocate this utility data pack in general for any world!
+This data pack was designed to work alongside my other data pack, [Cycle Offhand Arrows](https://github.com/chuangcaleb/cycle-offhand-arrows), which allows you to **cycle through arrow types in the offhand slot by using your offhand key whilst holding a Bow or Crossbow**! ﻿I heavily advocate this utility data pack in general for any world!
 
 ---
 
@@ -207,4 +207,8 @@ Large credit to and permission granted by [Avexus02](https://www.planetminecraft
 
 This is a complete rework of my previous [Improved Fletching Tables Data Pack](https://www.planetminecraft.com/data-pack/improved-fletching-tables/), and the two data packs are not meant to be compatible. Please uninstall the old data pack before using this one.
 
-Reminder: this data pack was designed to work alongside my other data pack, [Cycle Offhand Arrows](https://github.com/chuangcaleb/cycle-offhand-arrows/), which allows you to**cycle through arrow types in the offhand slot by using your offhand key whilst holding a Bow or Crossbow**! With all these new arrows and improved bow mechanics, you will need this utility data pack!
+Reminder: this data pack was designed to work alongside my other data pack, [Cycle Offhand Arrows](https://github.com/chuangcaleb/cycle-offhand-arrows/), which allows you to **cycle through arrow types in the offhand slot by using your offhand key whilst holding a Bow or Crossbow**! With all these new arrows and improved bow mechanics, you will need this utility data pack!
+
+### Credits
+
+[HeDeAnTheonlyone/Taglib: A tags library for minecraft data packs](https://github.com/HeDeAnTheonlyone/Taglib) has made tagging super convenient!

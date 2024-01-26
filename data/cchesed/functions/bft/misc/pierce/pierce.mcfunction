@@ -46,9 +46,9 @@ execute store result entity @s PierceLevel byte 1 run scoreboard players get @s 
 
 # ---------------------------------- effects --------------------------------- #
 
-execute at @s if block ~ ~ ~ #cchesed:bft/transparent run particle minecraft:crit ~ ~ ~ 0 0 0 0 10 normal
+execute at @s if block ~ ~ ~ #cchesed:taglib/walk_through run particle minecraft:crit ~ ~ ~ 0 0 0 0 10 normal
 
-execute at @s unless block ~ ~ ~ #cchesed:bft/transparent run data merge entity @s {inGround: 1b}
+execute at @s unless block ~ ~ ~ #cchesed:taglib/walk_through run data merge entity @s {inGround: 1b}
 
 # ---------------------------------------------------------------------------- #
 #                                    cleanup                                   #
