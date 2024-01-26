@@ -38,7 +38,7 @@ jobs:
         with:
           type: "zip"
           filename: ${{ env.PROJECT_NAME }}-dpv${{ steps.get_tag.outputs.tag_name }}.zip
-          exclusions: "*.git* /scripts/* **/*.jpeg notes.md"
+          exclusions: "**.git* scripts/* **.jpeg notes.md"
 
       - name: Release
         uses: softprops/action-gh-release@v1
