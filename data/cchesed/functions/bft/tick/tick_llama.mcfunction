@@ -29,4 +29,5 @@ function cchesed:bft/recipe/_check_all_recipes
 # ------------------------------ block handling ------------------------------ #
 
 # If block is broken or moved
-execute unless block ~ ~ ~ minecraft:fletching_table run function cchesed:bft/block/remove
+# We run it per llama, this reduces computation calls
+execute unless block ~ ~ ~ minecraft:fletching_table as @e[tag=cc.ft.table] at @s unless block ~ ~ ~ minecraft:fletching_table run function cchesed:bft/block/remove
