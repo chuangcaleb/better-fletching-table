@@ -155,14 +155,18 @@ Regular arrows are unchanged, they just have to be crafted through the Fletching
 
 Spectral Arrows have their recipe simplified from 1 Arrow surrounded by 4 Glowstone → 2 Spectral Arrows (Seriously, have you ever used this recipe?) to 1 Arrow + 1 Glowstone → 1 Spectral Arrow. To encourage the use of Spectral Arrows, glowing mobs now always drop 1 (extra) Glowstone Dust upon death if killed by a player, so they can craft even more Spectral Arrows.
 
+### Credits
+
 Large credit to and permission granted by [Avexus02](https://www.planetminecraft.com/member/avexus02/)'s [HeartDrops Data Pack](https://www.planetminecraft.com/data-pack/heartdrops/), to completely use its drop-item-at-mob-on-death code, unchanged! I spent a whole day trying to figure out how to do this. Thanks.
 
+[HeDeAnTheonlyone/Taglib: A tags library for minecraft data packs](https://github.com/HeDeAnTheonlyone/Taglib) has made tagging super convenient!
+
 ---
+
+### Final notes
+
+Vertical arrow crafting recipes can only use the middle column of the 3x3 Fletching Table crafting grid, and not the left nor right columns. It's just a bit of optimization that slightly reduces computations, a logical trade-off imo, because who even crafts arrows in the left or right columns, right, hahahaha...
 
 This is a complete rework of my previous [Improved Fletching Tables Data Pack](https://www.planetminecraft.com/data-pack/improved-fletching-tables/), and the two data packs are not meant to be compatible. Please uninstall the old data pack before using this one.
 
 Reminder: this data pack was designed to work alongside my other data pack, [Cycle Offhand Arrows](https://github.com/chuangcaleb/cycle-offhand-arrows/), which allows you to **cycle through arrow types in the offhand slot by using your offhand key whilst holding a Bow or Crossbow**! With all these new arrows and improved bow mechanics, you will need this utility data pack!
-
-### Credits
-
-[HeDeAnTheonlyone/Taglib: A tags library for minecraft data packs](https://github.com/HeDeAnTheonlyone/Taglib) has made tagging super convenient!
