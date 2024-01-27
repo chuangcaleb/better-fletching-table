@@ -34,70 +34,24 @@ This data pack was designed to work alongside my other data pack, [Cycle Offhand
 
 The vanilla Bow enchantment to always get is Power. Just like Sharpness, it's a flat simple damage increase, who doesn't want that? That's BORING. Power also makes combat boring once you start two-shotting every 10-heart mob.
 
-WIth this data pack, Power works differently; **a Power bow now makes your arrows fly faster.**
+WIth this data pack, Power works differently; **a Power bow now makes your arrows fly *faster*.**
 
-This opens up a very different playstyle compared to Crossbows, or even vanilla Bows. The difference is most noticeable on partially-charged shots; a Power V Bow on minimal charge flies as fast as a fully-charged Power I Bow!
+This opens up a very different playstyle compared to Crossbows, or even vanilla Bows. The difference is most noticeable on partially-charged shots; a floppy Power V Bow on weakest charge flies as fast as a fully-charged Power I Bow!
 
 And, with a similar damage output, people may opt for the Crossbow now! All without completely scraping the Power enchantment, but instead recontextualizing it.
 
-Yet, I recognize that increased arrow damage is important because you barely take any damage in full Diamond/Netherite from Arrow from a regular-damage-unenchanted Bow.
+The damage an arrow deals is calculated by the `damage` NBT as well as its velocity on impact. Since we are going to scale up the values of initial velocity, we have to scale down the `damage` NBT of Power arrows.
 
-Arrow damage is calculated as:
+| power level | speed multiplier | `damage` initial/vanilla | `damage` target (w/o speed) |
+| ---- | ---- | ---- | ---- |
+| 0 | 1.0 | 2.0 | 2.00 |
+| 1 | 1.2 | 3.0 | 2.40 |
+| 2 | 1.5 | 3.5 | 2.65 |
+| 3 | 1.9 | 4.0 | 2.90 |
+| 4 | 2.4 | 4.5 | 3.15 |
+| 5.. | 3.0 | 5.0 | 3.40 |
 
-> Effective Damage Value = Arrow `damage` NBT Value x Velocity on Impact
-
-<table>
-<tbody>
-<tr>
-<td>Power Level</td>
-<td>Updated `damage` NBT Value</td>
-<td>Target `damage` NBT Value</td>
-<td>Target Initial Effective Damage Value</td>
-</tr>
-<tr>
-<td><center>0</center></td>
-<td>1.0</td>
-<td>2.0</td>
-<td>2.0</td>
-</tr>
-<tr>
-<td><center>1</center></td>
-<td>1.65</td>
-<td>1.4</td>
-<td>2.31</td>
-</tr>
-<tr>
-<td><center>2</center></td>
-<td>1.35</td>
-<td>1.8</td>
-<td>2.43</td>
-</tr>
-<tr>
-<td><center>3</center></td>
-<td>1.17</td>
-<td>2.2</td>
-<td>2.574</td>
-</tr>
-<tr>
-<td><center>4</center></td>
-<td>1.06</td>
-<td>2.6</td>
-<td>2.756</td>
-</tr>
-<tr>
-<td><center>5</center></td>
-<td>1.0</td>
-<td>3.0</td>
-<td>3.0</td>
-</tr>
-</tbody>
-</table>
-
-Since we are going to crazy values of initial velocity, we have to scale down the arbitrary damage coefficient of Power V arrows.
-
-Yet, as you can see, Power V will still do much more damage than a Power I Arrow. So, still enchant your bows with Power.
-
-And, if you haven't noticed, there is a noticeable jump from no Power to Power I. So, getting Power I on any bow makes a huge difference!
+Yet, I recognize that increased arrow damage is important because you barely take any damage in full Diamond/Netherite from Arrow from a regular-damage-unenchanted Bow. As you can see, Power V will still do much more damage than a Power I Arrow. So, still try to get higher levels of Power. But a Power V bow isn't going to hit like a truck.
 
 Credit: I'm copying all these amazing ideas. I saw this idea on a Data Pack on planetminecraft years ago, titled something like "Acceleration — an enchantment that makes your arrows go faster!" It was an amazing idea and I tried hard but can't find it. So I had to code it from scratch. Took me a week. Please help claim the credits if anyone finds it!
 

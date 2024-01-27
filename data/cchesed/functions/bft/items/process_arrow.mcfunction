@@ -6,6 +6,7 @@ execute if entity @s[nbt={Color: 16765762}] run function cchesed:bft/items/flami
 
 execute unless entity @s[nbt={PierceLevel: 0b}] run function cchesed:bft/misc/pierce/init
 
-execute unless entity @s[nbt={damage: 2.0d}] run function cchesed:bft/misc/power/init
+function cchesed:bft/misc/power/init
+scoreboard players reset @s cc.ft.power
 
 tag @s add cc.ft.proccesed_arrow
