@@ -16,8 +16,8 @@ execute if data entity @s {Items: [{Slot: 3b, id: "minecraft:flint"}, {Slot: 8b,
 # spectral arrow
 execute if data entity @s Items[{id: "minecraft:arrow"}] if data entity @s Items[{id: "minecraft:glowstone_dust"}] if score @s cc.ft.empty_slots matches 7 run function cchesed:bft/recipe/spectral_arrow
 
-# flaming arrow
-execute if data entity @s Items[{id: "minecraft:arrow"}] if data entity @s Items[{id: "minecraft:fire_charge"}] if score @s cc.ft.empty_slots matches 7 run function cchesed:bft/recipe/flaming
+# fire-charged arrow
+execute if data entity @s {Items: [{Slot: 3b, id: "minecraft:fire_charge"}, {Slot: 8b, id: "minecraft:stick"}, {Slot: 13b, id: "minecraft:feather"}]} unless data entity @s {Items: [{Slot: 2b}]} unless data entity @s {Items: [{Slot: 4b}]} unless data entity @s {Items: [{Slot: 7b}]} unless data entity @s {Items: [{Slot: 9b}]} unless data entity @s {Items: [{Slot: 12b}]} unless data entity @s {Items: [{Slot: 14b}]} run function cchesed:bft/recipe/fire
 
 
 # tntr

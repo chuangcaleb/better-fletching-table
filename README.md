@@ -99,15 +99,17 @@ And I guess if you want, since it is technically not a GUI but an Inventory, you
 
 ---
 
-### Flaming Arrow
+### Fire-Charged Arrow
 
-> Fire Arrows without the Flame enchantment
+> Shoot your own Blaze Fireballs!
 
-Flaming Arrows are such a cool arrow type, having the ability to set mobs on fire, as well as light up TNT. But that's all locked behind the Flame enchantment, which you only can unlock at higher enchantments. Now you can shoot Fire arrows with regular unenchanted Bows or Crossbows!
+Blaze Fireballs are such a cool projectile, having the ability to set blocks on fire from a distance (lighting up caves?), setting mobs on fire, as well as light up TNT remotely.
 
-Flaming Arrow, a new arrow, is crafted by 1 Arrow + 1 Fire Charge → 1 Flaming Arrow.
+Flaming Arrow, a new arrow, is crafted with a Fire Charge in place of the Flint (that is, 1 Fire Charge + 1 Stick + 1 Feather → 2 Flaming Arrow).
 
-I might change this to Torches, I recognize this gets locked behind the Blaze Powder/Nether Fortress/Nether/Diamond Pickaxe wall, but I like giving Fire Charges another use. Torches are too cheap, too.
+Due to it being unfairly spammable with Bows, it's designed that regular bows will only shoot out the Tipped Arrow form. You must use a crossbow.
+
+For now, Piercing Blaze Fireballs are not a thing, it would be really cool if it were. But Multishot, though....
 
 ### Phantom Arrow
 
