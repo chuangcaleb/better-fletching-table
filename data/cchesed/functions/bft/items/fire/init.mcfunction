@@ -5,5 +5,6 @@ stopsound @a[distance=..16] player minecraft:entity.arrow.shoot
 stopsound @a[distance=..16] player minecraft:item.crossbow.shoot
 playsound minecraft:entity.blaze.shoot player @a[distance=..16]
 
-execute summon small_fireball run data modify entity @s Motion set from entity @e[type=arrow,sort=nearest,limit=1] Motion
+tag @s add cc.ft.fire_charge_a
+execute summon small_fireball run function cchesed:bft/items/fire/init_fire_charge
 kill @s
