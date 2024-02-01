@@ -24,7 +24,7 @@ execute unless data entity @s Items[{Slot: 16b, tag: {cchesed: {bft: {gui_ghost:
 
 # Reset craft result id
 scoreboard players set @s cc.ft.output_id -1
-function cchesed:bft/recipe/_check_all_recipes
+function cchesed:bft/craft/recipe/_check_all_recipes
 
 # ------------------------------ block handling ------------------------------ #
 
